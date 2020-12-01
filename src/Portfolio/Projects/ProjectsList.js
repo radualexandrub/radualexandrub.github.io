@@ -1,6 +1,8 @@
+import React, { useState } from "react";
 import projectsList from "./ProjectData";
 import Categories from "./ProjectCategories";
-import React, { useState } from "react";
+import ProjectModal from "./ProjectModal";
+import { useModalContext } from "./ProjectModalContext";
 
 const allCategories = [
   "all",
@@ -22,21 +24,39 @@ const ProjectsList = () => {
     setProjects(newProjectsList);
   };
 
+  const {
+    openProjectModal,
+    populateProjectModalInformation,
+  } = useModalContext();
+
   return (
     <section className="resume-section" id="projects">
       <div className="resume-section-content">
         <h2 className="mb-4">Projects</h2>
+
+        <ProjectModal />
 
         <Categories categories={categories} filterItems={filterItems} />
 
         <div className="project-container">
           {projects.map((project) => {
             const { id, title, category, img, imgAlt } = project;
+
             return (
-              <div key={id}>
+              <figure key={id}>
                 <img src={img} alt={imgAlt} />
                 <h4>{title}</h4>
-              </div>
+                <button
+                  key={id}
+                  className="btn"
+                  onClick={() => {
+                    openProjectModal();
+                    populateProjectModalInformation(project);
+                  }}
+                >
+                  View more
+                </button>
+              </figure>
             );
           })}
         </div>

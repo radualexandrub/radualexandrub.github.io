@@ -4,6 +4,7 @@ import Navbar from "./Portfolio/Navbar";
 import Education from "./Portfolio/Education";
 import Skills from "./Portfolio/Skills";
 import Projects from "./Portfolio/Projects/ProjectsList";
+import { ProjectModalProvider } from "./Portfolio/Projects/ProjectModalContext";
 import Contact from "./Portfolio/Contact";
 
 function App() {
@@ -22,15 +23,17 @@ function App() {
         <Navbar />
 
         <div className="container-fluid p-0">
-          <About />
+          <ProjectModalProvider>
+            <About />
 
-          <Education />
+            <Education />
 
-          <Skills />
+            <Skills />
 
-          <Projects />
+            <Projects />
 
-          <Contact />
+            <Contact />
+          </ProjectModalProvider>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

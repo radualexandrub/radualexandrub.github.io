@@ -49,7 +49,7 @@
     grid-gap: 2rem;
   }
 
-  .project-container div {
+  .project-container figure {
     display: grid;
     background: rgba(34, 38, 41, 1); /* Black background with 0.5 opacity */
     max-width: 35em;
@@ -60,7 +60,7 @@
     width: 100%;
   }
 
-  .project-container div h4 {
+  .project-container figure h4 {
     color: white;
     margin: 10px;
   }
@@ -73,7 +73,7 @@
     flex-direction: column;
   }
 
-  .project-container div {
+  .project-container figure {
     background: rgba(34, 38, 41, 1); /* Black background with 0.5 opacity */
     max-width: 30rem;
     margin: 0rem auto 2rem auto;
@@ -83,7 +83,7 @@
     width: 100%;
   }
 
-  .project-container div h4 {
+  .project-container figure h4 {
     color: white;
     margin: 10px;
   }
@@ -2263,3 +2263,49 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*end of DARK MODE toggle button*/
+
+/*
+=============== 
+Modal
+===============
+*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -1;
+}
+/* OPEN/CLOSE MODAL */
+.show-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: white;
+  border-radius: var(--radius);
+  width: 90vw;
+  height: 30vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  font-size: 1rem;
+  background: transparent;
+  border-color: transparent;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+/* *** end of PROJECTS MODAL *** */
