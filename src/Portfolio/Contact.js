@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faDev,
+  faHackerrank,
+  faFlickr,
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Contact() {
   return (
     <section className="resume-section" id="contact">
@@ -24,7 +33,7 @@ export default function Contact() {
             href="https://github.com/radualexandrub"
             title="GitHub"
           >
-            <i className="fab fa-github"></i>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
             target="_blank"
@@ -33,7 +42,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/radu-alexandru-bulai/"
             title="LinkedIn"
           >
-            <i className="fab fa-linkedin-in"></i>
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
             target="_blank"
@@ -42,7 +51,7 @@ export default function Contact() {
             href="https://dev.to/radualexandrub"
             title="Dev.to"
           >
-            <i className="fab fa-dev"></i>
+            <FontAwesomeIcon icon={faDev} />
           </a>
           <a
             target="_blank"
@@ -51,7 +60,7 @@ export default function Contact() {
             href="https://www.hackerrank.com/RaduAlexandruB"
             title="HackerRank"
           >
-            <i className="fab fa-hackerrank"></i>
+            <FontAwesomeIcon icon={faHackerrank} />
           </a>
           <a
             target="_blank"
@@ -60,7 +69,7 @@ export default function Contact() {
             href="https://www.flickr.com/radualexandru"
             title="Flickr - I'm also a photographer!"
           >
-            <i className="fab fa-flickr"></i>
+            <FontAwesomeIcon icon={faFlickr} />
           </a>
         </div>
       </div>

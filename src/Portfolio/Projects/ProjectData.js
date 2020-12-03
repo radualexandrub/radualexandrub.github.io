@@ -11,6 +11,11 @@ const ProjectData = [
     category: "Python",
     img: ProjectBlog01,
     imgAlt: "Django Blog with Users",
+    tags: ["Python", "Django", "Heroku"],
+    description:
+      "Application Main Features:\n- Responsive UI for desktop and mobile using Bootstrap4\n- Registered users can leave likes and comments on each blog article\n- Rich Text-Editor for blog articles and comments (with text formatting, code snippets, and more using CKEditor)\n- Media Files are stored using Google Drive Storage (free alternative to Amazon S3 Bucket)",
+    github: "https://github.com/radualexandrub/CodingTranquillity-DjangoBlog",
+    livelink: "https://codingtranquillity.herokuapp.com/",
   },
   {
     id: 2,
@@ -18,6 +23,12 @@ const ProjectData = [
     category: "Android",
     img: AndroidDB01,
     imgAlt: "Android Database Management SQLite",
+    tags: ["Android", "Java", "SQLite"],
+    description:
+      "Android App for managing a Database with 5 tables (Doctors, Patients, Medicines and their corresponding association tables Sections and Consultations). The DB is stored locally using SQLite and permits CRUD operations, as well as accesing the app by logging in either as a Client user or as an Administrator.",
+    github:
+      "https://github.com/radualexandrub/Android-SQLite-Database-MultipleTables",
+    livelink: "",
   },
   {
     id: 3,
@@ -25,6 +36,12 @@ const ProjectData = [
     category: "Python",
     img: AgeClass01,
     imgAlt: "Age and Gender Classification Raspberry Pi MobileNet",
+    tags: ["Python", "Keras", "OpenCV"],
+    description:
+      "Automatic age and gender classification in real-time, using Convolutional Neural Networks (based on MobileNet v1), optimized for Raspberry Pi 4 system using a .tflite model. The application is wrapped in a simple and modern UI using PyQt5.",
+    github:
+      "https://github.com/radualexandrub/Age-Gender-Classification-on-RaspberryPi4-with-TFLite-PyQt5",
+    livelink: "",
   },
   {
     id: 4,
@@ -32,6 +49,12 @@ const ProjectData = [
     category: "Android",
     img: AndroidToDo01,
     imgAlt: "Android ToDo Journal Quiz App",
+    tags: ["Android", "Java"],
+    description:
+      "Android App with multiple features such as ToDo List, Journal (with titles, entries and time stamps), Countdown timer, and a Quiz that generates different responses based on question answers (like a Personality test).",
+    github:
+      "https://github.com/radualexandrub/AndroidApp-ToDo-Journal-Timer-Quiz",
+    livelink: "",
   },
 ];
 

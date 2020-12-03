@@ -48,14 +48,19 @@ const ProjectsList = () => {
                 <h4>{title}</h4>
                 <button
                   key={id}
-                  className="btn"
+                  className="project-btn"
                   onClick={() => {
                     openProjectModal();
                     populateProjectModalInformation(project);
                   }}
                 >
-                  View more
+                  Explore
                 </button>
+                <ul className="tags">
+                  {Object.keys(project.tags).map((tagKey) => {
+                    return <li key={tagKey}>{project.tags[tagKey]}</li>;
+                  })}
+                </ul>
               </figure>
             );
           })}

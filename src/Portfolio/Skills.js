@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTerminal, faCode, faCheck } from "@fortawesome/free-solid-svg-icons";
+
 export default function Skills() {
   return (
     <>
@@ -43,14 +46,14 @@ export default function Skills() {
           <ul className="fa-ul">
             <li>
               <span className="fa-li">
-                <i className="fas fa-terminal"></i>
+                <FontAwesomeIcon icon={faTerminal} />
               </span>
               Programming:{" "}
               <strong>Python, JavaScript, SQL, Java (Android SDK), C</strong>
             </li>
             <li>
               <span className="fa-li">
-                <i className="fas fa-code"></i>
+                <FontAwesomeIcon icon={faCode} />
               </span>
               Markup & Styling:{" "}
               <strong>
@@ -86,26 +89,26 @@ export default function Skills() {
           <ul className="fa-ul mb-0">
             <li>
               <span className="fa-li">
-                <i className="fas fa-check"></i>
+                <FontAwesomeIcon icon={faCheck} />
               </span>
               Fast learner of new things
             </li>
             <li>
               <span className="fa-li">
-                <i className="fas fa-check"></i>
+                <FontAwesomeIcon icon={faCheck} />
               </span>
               Consistency in organizing and planning tasks
             </li>
             <li>
               <span className="fa-li">
-                <i className="fas fa-check"></i>
+                <FontAwesomeIcon icon={faCheck} />
               </span>
               Good leadership skills from being the head of the students groups
               I belonged to
             </li>
             <li>
               <span className="fa-li">
-                <i className="fas fa-check"></i>
+                <FontAwesomeIcon icon={faCheck} />
               </span>
               Continuous drive for self-improvement and self-motivation
             </li>

@@ -26,8 +26,6 @@ function About() {
             </div>
           </div>
 
-          <br />
-
           <div className="d-flex flex-column flex-md-row justify-content-between mb-4">
             <div className="flex-grow-1">
               <h3 className="mb-0">Bachelor's Degree: Computer Science</h3>
@@ -57,8 +55,6 @@ function About() {
               </span>
             </div>
           </div>
-
-          <br />
 
           <div className="d-flex flex-column flex-md-row justify-content-between">
             <div className="flex-grow-1">
