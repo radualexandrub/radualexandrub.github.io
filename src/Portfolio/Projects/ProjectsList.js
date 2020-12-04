@@ -44,7 +44,7 @@ const ProjectsList = () => {
 
             return (
               <div key={id}>
-                <img src={img} alt={imgAlt} />
+                <img src={[img[0]]} alt={imgAlt} />
                 <h4>{title}</h4>
                 <button
                   key={id}

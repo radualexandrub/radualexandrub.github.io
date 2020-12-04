@@ -1,7 +1,15 @@
 import ProjectBlog01 from "../../img/Projects/CodingTranquillity/CodingTranquillity.webp";
+import ProjectBlog02 from "../../img/Projects/CodingTranquillity/CodingTranquillity2.webp";
+import ProjectBlog04 from "../../img/Projects/CodingTranquillity/CodingTranquillity4.webp";
 import AndroidDB01 from "../../img/Projects/Project_Database_MultipleTables1.webp";
+import AndroidDB02 from "../../img/Projects/Project_Database_MultipleTables2.webp";
+import AndroidDB03 from "../../img/Projects/Project_Database_MultipleTables3.jpg";
 import AgeClass01 from "../../img/Projects/ProjectAgeClassification/PicDemo1.webp";
+import AgeClass02 from "../../img/Projects/ProjectAgeClassification/PicDemo2.webp";
+import AgeClass03 from "../../img/Projects/ProjectAgeClassification/VideoDemo.gif";
 import AndroidToDo01 from "../../img/Projects/Project_ToDoQuiz.webp";
+import AndroidToDo02 from "../../img/Projects/Project_ToDoQuiz2.webp";
+import AndroidToDo03 from "../../img/Projects/Project_ToDoQuiz3.webp";
 
 const ProjectData = [
   {
@@ -9,7 +17,7 @@ const ProjectData = [
     title:
       "Django Blog with Authentication, Coding-Articles, Likes and Comments",
     category: "Python",
-    img: ProjectBlog01,
+    img: [ProjectBlog01, ProjectBlog02, ProjectBlog04],
     imgAlt: "Django Blog with Users",
     tags: ["Python", "Django", "Heroku"],
     description:
@@ -21,7 +29,7 @@ const ProjectData = [
     id: 2,
     title: "Database Management with Multiple Tables and Authentication",
     category: "Android",
-    img: AndroidDB01,
+    img: [AndroidDB01, AndroidDB02, AndroidDB03],
     imgAlt: "Android Database Management SQLite",
     tags: ["Android", "Java", "SQLite"],
     description:
@@ -34,7 +42,7 @@ const ProjectData = [
     id: 3,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
     category: "Python",
-    img: AgeClass01,
+    img: [AgeClass01, AgeClass02, AgeClass03],
     imgAlt: "Age and Gender Classification Raspberry Pi MobileNet",
     tags: ["Python", "Keras", "OpenCV"],
     description:
@@ -47,7 +55,7 @@ const ProjectData = [
     id: 4,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android",
-    img: AndroidToDo01,
+    img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],
     imgAlt: "Android ToDo Journal Quiz App",
     tags: ["Android", "Java"],
     description:

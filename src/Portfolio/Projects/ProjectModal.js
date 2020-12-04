@@ -3,6 +3,8 @@ import { useModalContext } from "./ProjectModalContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Carousel } from "react-responsive-carousel";
+import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProjectModal() {
   const {
@@ -18,7 +20,26 @@ export default function ProjectModal() {
     >
       <div className="modal-container">
         <h3>{projectModalInformation.title}</h3>
-        <img src={projectModalInformation.img}></img>
+
+        {projectModalInformation.img ? (
+          <Carousel
+            showThumbs={false}
+            swipeable={true}
+            transitionTime={200}
+            useKeyboardArrows={true}
+          >
+            {projectModalInformation.img.map((image) => {
+              return (
+                <img
+                  key={projectModalInformation.id}
+                  src={image}
+                  alt={projectModalInformation.imgAlt}
+                ></img>
+              );
+            })}
+          </Carousel>
+        ) : null}
+
         <div>
           {projectModalInformation.livelink ? (
             <a
