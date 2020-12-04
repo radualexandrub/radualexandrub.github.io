@@ -1,10 +1,32 @@
 import imgProfile from "../img/imgProfile.jpg";
-import { Link, animateScroll } from "react-scroll";
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const toggleNavbarOpen = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const navbarRef = useRef(null);
+  useEffect(() => {
+    /* Close the Mobile Navbar when user clicks outside of it */
+    const setNavbarClosed = (event) => {
+      if (navbarRef.current && navbarRef.current.contains(event.target)) {
+        return;
+      }
+
+      setIsNavbarOpen(false);
+    };
+
+    document.addEventListener("mousedown", setNavbarClosed);
+    return () => document.removeEventListener("mousedown", setNavbarClosed);
+  }, []);
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      ref={navbarRef}
       id="sideNav"
     >
       <a className="navbar-brand" href="#page-top">
@@ -26,15 +48,16 @@ function Navbar() {
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        onClick={() => toggleNavbarOpen()}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        className={`${
+          isNavbarOpen ? "navbar-collapse" : "collapse navbar-collapse"
+        }`}
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link

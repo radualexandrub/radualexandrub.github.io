@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useModalContext } from "./ProjectModalContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -12,13 +12,29 @@ export default function ProjectModal() {
     closeProjectModal,
     projectModalInformation,
   } = useModalContext();
+
+  const modalRef = useRef(null);
+  useEffect(() => {
+    /* Close the Modal when user clicks outside of it */
+    const setModalClosed = (event) => {
+      if (modalRef.current && modalRef.current.contains(event.target)) {
+        return;
+      }
+
+      closeProjectModal();
+    };
+
+    document.addEventListener("mousedown", setModalClosed);
+    return () => document.removeEventListener("mousedown", setModalClosed);
+  }, []);
+
   return (
     <div
       className={`${
         isProjectModalOpen ? "modal-overlay show-modal" : "modal-overlay"
       }`}
     >
-      <div className="modal-container">
+      <div className="modal-container" ref={modalRef}>
         <h3>{projectModalInformation.title}</h3>
 
         {projectModalInformation.img ? (
