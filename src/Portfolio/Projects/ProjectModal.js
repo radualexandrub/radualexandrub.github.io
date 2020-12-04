@@ -1,5 +1,8 @@
 import React from "react";
 import { useModalContext } from "./ProjectModalContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function ProjectModal() {
   const {
@@ -13,28 +16,30 @@ export default function ProjectModal() {
         isProjectModalOpen ? "modal-overlay show-modal" : "modal-overlay"
       }`}
     >
-      <div className="modal-container" id="myModal">
+      <div className="modal-container">
         <h3>{projectModalInformation.title}</h3>
         <img src={projectModalInformation.img}></img>
-        {projectModalInformation.livelink ? (
+        <div>
+          {projectModalInformation.livelink ? (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              href={projectModalInformation.livelink}
+              title="CodingTranquillity Blog"
+            >
+              <FontAwesomeIcon icon={faDesktop} /> View Live
+            </a>
+          ) : null}
           <a
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
-            href={projectModalInformation.livelink}
-            title="CodingTranquillity Blog"
+            href={projectModalInformation.github}
           >
-            <i className="fas fa-desktop"></i> View Website
+            <FontAwesomeIcon icon={faGithub} /> GitHub
           </a>
-        ) : null}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-          href={projectModalInformation.github}
-        >
-          <i className="fab fa-github"></i> GitHub
-        </a>
+        </div>
         <p>{projectModalInformation.description}</p>
         <button className="close-modal-btn" onClick={closeProjectModal}>
           close

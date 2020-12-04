@@ -1,4 +1,5 @@
 import imgProfile from "../img/imgProfile.jpg";
+import { Link, animateScroll } from "react-scroll";
 
 function Navbar() {
   return (
@@ -6,19 +7,21 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
       id="sideNav"
     >
-      <a className="navbar-brand js-scroll-trigger" href="#page-top">
-        <span className="d-block d-lg-none">Radu-Alexandru Bulai</span>
-        <span className="d-none d-lg-block">
-          <img
-            className="img-fluid img-profile rounded-circle mx-auto mb-3"
-            src={imgProfile}
-            alt=""
-          />
-          <br />
-          Radu-Alexandru
-          <br />
-          Bulai
-        </span>
+      <a className="navbar-brand" href="#page-top">
+        <Link to="page-top" spy={true} smooth={true} duration={200}>
+          <span className="d-block d-lg-none">Radu-Alexandru Bulai</span>
+          <span className="d-none d-lg-block">
+            <img
+              className="img-fluid img-profile rounded-circle mx-auto mb-3"
+              src={imgProfile}
+              alt="Radu Alexandru Bulai"
+            />
+            <br />
+            Radu-Alexandru
+            <br />
+            Bulai
+          </span>
+        </Link>
       </a>
       <button
         className="navbar-toggler"
@@ -34,29 +37,64 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">
+            <Link
+              activeClass="active"
+              className="nav-link"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#education">
+            <Link
+              activeClass="active"
+              className="nav-link"
+              to="education"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
               Education
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">
+            <Link
+              activeClass="active"
+              className="nav-link"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
               Skills
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#projects">
+            <Link
+              activeClass="active"
+              className="nav-link"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
+            <Link
+              activeClass="active"
+              className="nav-link"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
               Contact
-            </a>
+            </Link>
           </li>
           <br />
           <div className="theme-switch-wrapper nav-item">

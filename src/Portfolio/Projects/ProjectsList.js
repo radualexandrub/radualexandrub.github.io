@@ -43,7 +43,7 @@ const ProjectsList = () => {
             const { id, title, category, img, imgAlt } = project;
 
             return (
-              <figure key={id}>
+              <div key={id}>
                 <img src={img} alt={imgAlt} />
                 <h4>{title}</h4>
                 <button
@@ -61,7 +61,7 @@ const ProjectsList = () => {
                     return <li key={tagKey}>{project.tags[tagKey]}</li>;
                   })}
                 </ul>
-              </figure>
+              </div>
             );
           })}
         </div>
