@@ -1,6 +1,7 @@
 import imgProfile from "../img/imgProfile.jpg";
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-scroll";
+import DarkModeToggle from "../DarkModeToggle";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -29,22 +30,27 @@ function Navbar() {
       ref={navbarRef}
       id="sideNav"
     >
-      <a className="navbar-brand" href="#page-top">
-        <Link to="page-top" spy={true} smooth={true} duration={200}>
-          <span className="d-block d-lg-none">Radu-Alexandru Bulai</span>
-          <span className="d-none d-lg-block">
-            <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-3"
-              src={imgProfile}
-              alt="Radu Alexandru Bulai"
-            />
-            <br />
-            Radu-Alexandru
-            <br />
-            Bulai
-          </span>
-        </Link>
-      </a>
+      <Link
+        className="navbar-brand"
+        to="page-top"
+        spy={true}
+        smooth={true}
+        duration={200}
+      >
+        <span className="d-block d-lg-none">Radu-Alexandru Bulai</span>
+        <span className="d-none d-lg-block">
+          <img
+            className="img-fluid img-profile rounded-circle mx-auto mb-3"
+            src={imgProfile}
+            alt="Radu Alexandru Bulai"
+          />
+          <br />
+          Radu-Alexandru
+          <br />
+          Bulai
+        </span>
+      </Link>
+
       <button
         className="navbar-toggler"
         type="button"
@@ -120,12 +126,7 @@ function Navbar() {
             </Link>
           </li>
           <br />
-          <div className="theme-switch-wrapper nav-item">
-            <label className="theme-switch" htmlFor="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div className="slider round"></div>
-            </label>
-          </div>
+          <DarkModeToggle />
         </ul>
       </div>
     </nav>

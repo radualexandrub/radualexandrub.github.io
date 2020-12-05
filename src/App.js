@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./Portfolio/About";
 import Navbar from "./Portfolio/Navbar";
 import Education from "./Portfolio/Education";

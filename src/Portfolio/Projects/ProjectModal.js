@@ -35,8 +35,10 @@ export default function ProjectModal() {
       }`}
     >
       <div className="modal-container" ref={modalRef}>
+        <button className="close-modal-btn" onClick={closeProjectModal}>
+          close
+        </button>
         <h3>{projectModalInformation.title}</h3>
-
         {projectModalInformation.img ? (
           <Carousel
             showThumbs={false}
@@ -55,7 +57,7 @@ export default function ProjectModal() {
             })}
           </Carousel>
         ) : null}
-
+        <p>{projectModalInformation.description}</p>
         <div>
           {projectModalInformation.livelink ? (
             <a
@@ -77,10 +79,6 @@ export default function ProjectModal() {
             <FontAwesomeIcon icon={faGithub} /> GitHub
           </a>
         </div>
-        <p>{projectModalInformation.description}</p>
-        <button className="close-modal-btn" onClick={closeProjectModal}>
-          close
-        </button>
       </div>
     </div>
   );

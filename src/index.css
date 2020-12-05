@@ -1,19 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #2b627c;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
+  --font-header-color: #71787e;
+  --font-text-color: #575c61;
   --primary: #2b627c;
   --secondary: #6c757d;
   --success: #28a745;
@@ -22,6 +11,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --bg-color: #fff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -41,6 +31,14 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+[class="dark"] {
+  --primary-color: #f2f2f2;
+  --font-header-color: #f0f0fc;
+  --font-text-color: #c8c8d6;
+  --bg-color: #0d0d0e;
+  --heading-color: #3a83a6;
+}
+
 @media (min-width: 768px) {
   .project-container {
     display: inline-grid;
@@ -57,9 +55,10 @@
     flex-direction: column;
   }
 }
+
 .project-container div {
   display: grid;
-  background: rgba(34, 38, 41, 1); /* Black background with 0.5 opacity */
+  background: #121416;
   max-width: 35em;
   margin: 0rem auto 1rem auto;
 }
@@ -68,7 +67,7 @@
 }
 
 .project-container div h4 {
-  color: white;
+  color: #fff;
   margin: 10px 10px 0px 10px;
 }
 
@@ -76,7 +75,7 @@
   position: relative;
   background: transparent;
   border-color: transparent;
-  color: white;
+  color: #fff;
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0rem 0.5rem 0rem 0.5rem;
@@ -88,7 +87,7 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .project-btn:hover {
-  color: white;
+  color: #fff;
   background: #2b627c;
 }
 
@@ -115,7 +114,7 @@
   width: 100vw;
   height: 100vh;
   /* Text styles */
-  color: white;
+  color: #fff;
   /* Background styles */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./img/hero-bg.webp");
@@ -126,14 +125,6 @@
 }
 .hero h1 {
   color: #fff;
-}
-
-[data-theme="dark"] {
-  --primary-color: #f2f2f2;
-  --secondary-color: #f2f2f2;
-  --font-color: #e1e1ff;
-  --bg-color: #0d0d0e;
-  --heading-color: #3a83a6;
 }
 
 *,
@@ -166,7 +157,7 @@ body {
   line-height: 1.5;
   text-align: left;
   background-color: var(--bg-color);
-  color: var(--font-color);
+  color: var(--font-text-color) !important;
   transition: background-color 0.2s ease;
 }
 
@@ -346,7 +337,7 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: var(--secondary-color);
+  color: var(--font-header-color);
 }
 
 .h1,
@@ -602,6 +593,7 @@ a > code {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  text-align: center;
 }
 
 .navbar-toggler {
@@ -2098,7 +2090,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: var(--primary);
 }
 
 @media (min-width: 992px) {
@@ -2204,13 +2196,13 @@ section.resume-section .resume-section-content {
   margin: 0rem 0.5rem 1rem 0.5rem;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   letter-spacing: 1px;
-  color: #222629;
+  color: var(--font-text-color);
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--radius);
 }
 .filter-btn:hover {
-  color: white;
+  color: #fff;
   background: #2b627c;
 }
 
@@ -2218,6 +2210,7 @@ section.resume-section .resume-section-content {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .theme-switch {
   display: inline-block;
@@ -2253,7 +2246,7 @@ section.resume-section .resume-section-content {
 }
 
 input:checked + .slider {
-  background-color: #000000;
+  background-color: #000;
 }
 
 input:checked + .slider:before {
@@ -2293,7 +2286,7 @@ Modal
 }
 
 .modal-container {
-  background: white;
+  background: var(--bg-color);
   border-radius: var(--radius);
   margin: 20px 15px 10px 15px;
   text-align: center;
@@ -2326,7 +2319,8 @@ Modal
 }
 
 .modal-container h3 {
-  margin: 2rem 5px 0 5px;
+  color: var(--font-header-color);
+  margin: 2rem 5px 5px 5px;
 }
 
 .modal-container img {
@@ -2334,12 +2328,16 @@ Modal
 }
 
 .modal-container p {
-  color: black;
-  margin: 1rem;
+  color: var(--font-text-color);
+  margin: 0.5rem;
+}
+
+.modal-container div {
+  margin: 0 0 5px 0;
 }
 
 .modal-container div a {
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
 }
 
 .close-modal-btn {
@@ -2349,7 +2347,7 @@ Modal
   font-size: 1rem;
   background: transparent;
   border-color: transparent;
-  color: #1e1e1e;
+  color: var(--font-color);
   cursor: pointer;
 }
 /* *** end of PROJECTS MODAL *** */
