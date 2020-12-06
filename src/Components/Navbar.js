@@ -1,7 +1,9 @@
+import React from "react";
 import imgProfile from "../img/imgProfile.jpg";
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-scroll";
-import DarkModeToggle from "../DarkModeToggle";
+import { Link as LinkScroll } from "react-scroll";
+import DarkModeToggle from "../Components/DarkModeToggle";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -30,7 +32,7 @@ function Navbar() {
       ref={navbarRef}
       id="sideNav"
     >
-      <Link
+      <LinkScroll
         className="navbar-brand"
         to="page-top"
         spy={true}
@@ -49,7 +51,7 @@ function Navbar() {
           <br />
           Bulai
         </span>
-      </Link>
+      </LinkScroll>
 
       <button
         className="navbar-toggler"
@@ -66,7 +68,7 @@ function Navbar() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link
+            <LinkScroll
               activeClass="active"
               className="nav-link"
               to="about"
@@ -75,10 +77,10 @@ function Navbar() {
               duration={200}
             >
               About
-            </Link>
+            </LinkScroll>
           </li>
           <li className="nav-item">
-            <Link
+            <LinkScroll
               activeClass="active"
               className="nav-link"
               to="education"
@@ -87,10 +89,10 @@ function Navbar() {
               duration={200}
             >
               Education
-            </Link>
+            </LinkScroll>
           </li>
           <li className="nav-item">
-            <Link
+            <LinkScroll
               activeClass="active"
               className="nav-link"
               to="skills"
@@ -99,10 +101,10 @@ function Navbar() {
               duration={200}
             >
               Skills
-            </Link>
+            </LinkScroll>
           </li>
           <li className="nav-item">
-            <Link
+            <LinkScroll
               activeClass="active"
               className="nav-link"
               to="projects"
@@ -111,10 +113,10 @@ function Navbar() {
               duration={200}
             >
               Projects
-            </Link>
+            </LinkScroll>
           </li>
           <li className="nav-item">
-            <Link
+            <LinkScroll
               activeClass="active"
               className="nav-link"
               to="contact"
@@ -123,7 +125,11 @@ function Navbar() {
               duration={200}
             >
               Contact
-            </Link>
+            </LinkScroll>
+          </li>
+          <hr />
+          <li className="nav-item">
+            <Link to="/blog">Blog</Link>
           </li>
           <br />
           <DarkModeToggle />

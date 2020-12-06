@@ -1,15 +1,15 @@
-import ProjectBlog01 from "../../img/Projects/CodingTranquillity/CodingTranquillity.webp";
-import ProjectBlog02 from "../../img/Projects/CodingTranquillity/CodingTranquillity2.webp";
-import ProjectBlog04 from "../../img/Projects/CodingTranquillity/CodingTranquillity4.webp";
-import AndroidDB01 from "../../img/Projects/Project_Database_MultipleTables1.webp";
-import AndroidDB02 from "../../img/Projects/Project_Database_MultipleTables2.webp";
-import AndroidDB03 from "../../img/Projects/Project_Database_MultipleTables3.jpg";
-import AgeClass01 from "../../img/Projects/ProjectAgeClassification/PicDemo1.webp";
-import AgeClass02 from "../../img/Projects/ProjectAgeClassification/PicDemo2.webp";
-import AgeClass03 from "../../img/Projects/ProjectAgeClassification/VideoDemo.gif";
-import AndroidToDo01 from "../../img/Projects/Project_ToDoQuiz.webp";
-import AndroidToDo02 from "../../img/Projects/Project_ToDoQuiz2.webp";
-import AndroidToDo03 from "../../img/Projects/Project_ToDoQuiz3.webp";
+import ProjectBlog01 from "../../../img/Projects/CodingTranquillity/CodingTranquillity.webp";
+import ProjectBlog02 from "../../../img/Projects/CodingTranquillity/CodingTranquillity2.webp";
+import ProjectBlog04 from "../../../img/Projects/CodingTranquillity/CodingTranquillity4.webp";
+import AndroidDB01 from "../../../img/Projects/Project_Database_MultipleTables1.webp";
+import AndroidDB02 from "../../../img/Projects/Project_Database_MultipleTables2.webp";
+import AndroidDB03 from "../../../img/Projects/Project_Database_MultipleTables3.jpg";
+import AgeClass01 from "../../../img/Projects/ProjectAgeClassification/PicDemo1.webp";
+import AgeClass02 from "../../../img/Projects/ProjectAgeClassification/PicDemo2.webp";
+import AgeClass03 from "../../../img/Projects/ProjectAgeClassification/VideoDemo.gif";
+import AndroidToDo01 from "../../../img/Projects/Project_ToDoQuiz.webp";
+import AndroidToDo02 from "../../../img/Projects/Project_ToDoQuiz2.webp";
+import AndroidToDo03 from "../../../img/Projects/Project_ToDoQuiz3.webp";
 
 const ProjectData = [
   {

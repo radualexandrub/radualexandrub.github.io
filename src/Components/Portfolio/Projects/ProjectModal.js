@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel } from "react-responsive-carousel";
-import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+import "../../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProjectModal() {
   const {
