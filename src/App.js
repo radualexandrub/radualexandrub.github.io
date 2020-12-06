@@ -7,16 +7,18 @@ import { ProjectModalProvider } from "./Components/Portfolio/Projects/ProjectMod
 import Contact from "./Components/Portfolio/Contact";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Blog from "./Components/Blog/BlogHome";
+import BlogHome from "./Components/Blog/BlogHome";
+import NavbarBlog from "./Components/NavbarBlog";
+import BlogArticle from "./Components/Blog/BlogArticle";
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <div id="page-top">
         <Switch>
-          <div className="container-fluid p-0">
-            <Route exact path="/">
+          <Route exact path="/">
+            <div className="container-fluid p-0">
+              <Navbar />
               <About />
               <Education />
               <Skills />
@@ -24,11 +26,15 @@ function App() {
                 <Projects />
               </ProjectModalProvider>
               <Contact />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-          </div>
+            </div>
+          </Route>
+          <Route exact path="/blog">
+            <div className="container-fluid p-0">
+              <NavbarBlog />
+              <BlogHome />
+            </div>
+          </Route>
+          <Route path="/blog/:id" children={<BlogArticle />}></Route>
         </Switch>
       </div>
     </Router>

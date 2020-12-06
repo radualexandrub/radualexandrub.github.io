@@ -3,10 +3,13 @@ const BlogData = [
     id: 1,
     title: "Embrace Keyboard Macros into your Dev Life with AutoHotKey",
     category: "AutoHotKey",
-    img: "",
-    imgAlt: "",
+    img:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--Hwatv_hZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/aze6fjgef6pd9azercaj.jpeg",
+    imgAlt: "Keyboard Macros Developer AutoHotKey",
     tags: ["AutoHotKey", "Productivity"],
-    link: "/embrace-macros-hotstrings-into-your-dev-life-with-autohotkey",
+    url: "embrace-macros-hotstrings-into-your-dev-life-with-autohotkey",
+    date: "23 Oct, 2020",
+    minread: "7",
     content: `
 _[Cover image by Karol D, on Pexels.com](https://www.pexels.com/photo/black-lighted-gaming-keyboard-841228/)_
 
@@ -299,12 +302,32 @@ R.B.
   },
   {
     id: 2,
-    title: "Embrace Keyboard Macros into your Dev Life with AutoHotKey",
+    title:
+      "Embrace Mouse Macros into your Dev Life to increase your Productivity with AHK",
     category: "AutoHotKey",
-    img: "",
-    imgAlt: "",
+    img:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--Lj4n0Mq2--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/9eyt34vszh5bd6twffo7.jpg",
+    imgAlt: "Mouse Macros AutoHotKey",
     tags: ["AutoHotKey", "Productivity"],
-    link: "/embrace-macros-hotstrings-into-your-dev-life-with-autohotkey",
+    url:
+      "embrace-mouse-macros-into-your-dev-life-to-increase-your-productivity-with-ahk",
+    date: "30 Oct, 2020",
+    minread: "7",
+    content: ``,
+  },
+  {
+    id: 3,
+    title:
+      "Use HotStrings in your Dev Life to increase your daily Productivity with AHK",
+    category: "AutoHotKey",
+    img:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--Nvx0q_WF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/r4d5py4rldtl6kpjcjm6.jpg",
+    imgAlt: "HotStrings for Developers AutoHotKey",
+    tags: ["AutoHotKey", "Productivity"],
+    url:
+      "use-hotstrings-in-your-dev-life-to-increase-your-daily-productivity-with-ahk",
+    date: "7 Nov, 2020",
+    minread: "4",
     content: ``,
   },
 ];

@@ -1,37 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import BlogData from "./BlogData";
-import ReactMarkdownWithHtml from "react-markdown/with-html";
-import gfm from "remark-gfm";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Link } from "react-router-dom";
 
 const BlogHome = () => {
-  const markdownRenderers = {
-    code: ({ language, value }) => {
-      return (
-        <SyntaxHighlighter
-          style={atomDark}
-          language={language}
-          children={value}
-        />
-      );
-    },
-  };
-
+  const [blogArticles, setBlogArticles] = useState(BlogData);
   return (
     <>
       <section className="resume-section">
         <div className="resume-section-content">
-          <h1>{BlogData[0].title}</h1>
-          <ReactMarkdownWithHtml
-            renderers={markdownRenderers}
-            plugins={[gfm]}
-            children={BlogData[0].content}
-            allowDangerousHtml
-          />
+          <h1>My Articles</h1>
+          {blogArticles.map((blogArticle) => {
+            return <BlogCard id={blogArticle.id} BlogData={blogArticle} />;
+          })}
         </div>
       </section>
     </>
+  );
+};
+
+const BlogCard = ({ BlogData }) => {
+  return (
+    <div className="blog-card">
+      <img src={BlogData.img} alt={BlogData.imgAlt} />
+      <div>
+        <Link to={`/blog/${BlogData.id}`}>
+          <h1>{BlogData.title}</h1>
+        </Link>
+        <p>
+          {BlogData.date} · {BlogData.minread} min read
+        </p>
+        <ul className="tags">
+          {Object.keys(BlogData.tags).map((tagKey) => {
+            return <li key={tagKey}>{BlogData.tags[tagKey]}</li>;
+          })}
+        </ul>
+      </div>
+    </div>
   );
 };
 

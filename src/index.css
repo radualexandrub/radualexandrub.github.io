@@ -55,11 +55,14 @@ td {
   border-bottom: 1px solid rgb(128, 128, 128);
 }
 
+/* Image withing a blog article*/
 @media (max-width: 768px) {
   center p img {
     width: 100%;
   }
 }
+
+/* Project card */
 
 @media (min-width: 768px) {
   .project-container {
@@ -130,6 +133,68 @@ td {
   margin: 5px 5px 10px 5px;
   text-decoration: none;
 }
+
+/* Blog-post-card */
+
+@media (min-width: 768px) {
+  .blog-card {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .blog-card img {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .blog-card img {
+    max-width: 100%;
+  }
+}
+
+.blog-card {
+  max-width: 70rem;
+  background: #121416;
+  margin: 0 auto 2rem 0;
+}
+
+.blog-card div {
+  width: 100%;
+  padding: 1rem;
+}
+
+.blog-card h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.blog-card .tags {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+}
+.blog-card .tags li {
+  background: #267;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  height: 26px;
+  line-height: 26px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+/* HERO Image Background */
 
 .hero {
   /* Sizing */

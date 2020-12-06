@@ -2,10 +2,10 @@ import React from "react";
 import imgProfile from "../img/imgProfile.jpg";
 import { useState, useRef, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
-import DarkModeToggle from "../Components/DarkModeToggle";
+import DarkModeToggle from "./DarkModeToggle";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavbarBlog() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const toggleNavbarOpen = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -68,69 +68,8 @@ function Navbar() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              About
-            </LinkScroll>
-          </li>
-          <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
-              to="education"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              Education
-            </LinkScroll>
-          </li>
-          <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
-              to="skills"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              Skills
-            </LinkScroll>
-          </li>
-          <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              Projects
-            </LinkScroll>
-          </li>
-          <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              Contact
-            </LinkScroll>
-          </li>
-          <hr />
-          <li className="nav-item">
-            <Link className="nav-link" to="/blog">
-              Blog
+            <Link className="nav-link" to="/">
+              Portfolio
             </Link>
           </li>
           <br />
@@ -141,4 +80,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarBlog;
