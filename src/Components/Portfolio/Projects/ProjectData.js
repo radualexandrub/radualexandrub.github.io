@@ -10,6 +10,9 @@ import AgeClass03 from "../../../img/Projects/ProjectAgeClassification/VideoDemo
 import AndroidToDo01 from "../../../img/Projects/Project_ToDoQuiz.webp";
 import AndroidToDo02 from "../../../img/Projects/Project_ToDoQuiz2.webp";
 import AndroidToDo03 from "../../../img/Projects/Project_ToDoQuiz3.webp";
+import AndroidAge01 from "../../../img/Projects/Project_AndroidAge01.webp";
+import AndroidAge02 from "../../../img/Projects/Project_AndroidAge02.webp";
+import AndroidAge03 from "../../../img/Projects/Project_AndroidAge03.webp";
 
 const ProjectData = [
   {
@@ -53,6 +56,18 @@ const ProjectData = [
   },
   {
     id: 4,
+    title: "Age Classification Android App",
+    category: "Android",
+    img: [AndroidAge01, AndroidAge02, AndroidAge03],
+    imgAlt: "Android ToDo Journal Quiz App",
+    tags: ["TensorFlow Lite", "Android", "Python"],
+    description:
+      "Age Classification App using Native Android. The quantized .tflite model was trained and generated using TensorFlow Lite Model Maker. Face databases used: UTKFace combined with Appa-Real.",
+    github: "https://github.com/radualexandrub/Android-Age-Classification",
+    livelink: "",
+  },
+  {
+    id: 5,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],

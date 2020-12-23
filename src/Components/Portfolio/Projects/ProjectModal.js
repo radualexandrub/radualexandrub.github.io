@@ -39,45 +39,49 @@ export default function ProjectModal() {
           close
         </button>
         <h3>{projectModalInformation.title}</h3>
-        {projectModalInformation.img ? (
-          <Carousel
-            showThumbs={false}
-            swipeable={true}
-            transitionTime={200}
-            useKeyboardArrows={true}
-          >
-            {projectModalInformation.img.map((image) => {
-              return (
-                <img
-                  key={projectModalInformation.id}
-                  src={image}
-                  alt={projectModalInformation.imgAlt}
-                ></img>
-              );
-            })}
-          </Carousel>
-        ) : null}
-        <p>{projectModalInformation.description}</p>
-        <div>
-          {projectModalInformation.livelink ? (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-              href={projectModalInformation.livelink}
-              title="CodingTranquillity Blog"
+        <div className="modal-container-image-desc">
+          {projectModalInformation.img ? (
+            <Carousel
+              showThumbs={false}
+              swipeable={true}
+              transitionTime={200}
+              useKeyboardArrows={true}
             >
-              <FontAwesomeIcon icon={faDesktop} /> View Live
-            </a>
+              {projectModalInformation.img.map((image) => {
+                return (
+                  <img
+                    key={projectModalInformation.id}
+                    src={image}
+                    alt={projectModalInformation.imgAlt}
+                  ></img>
+                );
+              })}
+            </Carousel>
           ) : null}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            href={projectModalInformation.github}
-          >
-            <FontAwesomeIcon icon={faGithub} /> GitHub
-          </a>
+          <div>
+            <p>{projectModalInformation.description}</p>
+            <div>
+              {projectModalInformation.livelink ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                  href={projectModalInformation.livelink}
+                  title="CodingTranquillity Blog"
+                >
+                  <FontAwesomeIcon icon={faDesktop} /> View Live
+                </a>
+              ) : null}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                href={projectModalInformation.github}
+              >
+                <FontAwesomeIcon icon={faGithub} /> GitHub
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

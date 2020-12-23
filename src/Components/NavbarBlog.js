@@ -68,7 +68,14 @@ function NavbarBlog() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
+            <Link className="nav-link" to="/blog">
+              Blog
+              <br />
+              Articles
+            </Link>
             <Link className="nav-link" to="/">
+              Back to
+              <br />
               Portfolio
             </Link>
           </li>

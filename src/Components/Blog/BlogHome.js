@@ -6,11 +6,11 @@ const BlogHome = () => {
   const [blogArticles, setBlogArticles] = useState(BlogData);
   return (
     <>
-      <section className="resume-section">
+      <section className="resume-section" id="page-top">
         <div className="resume-section-content">
           <h1>My Articles</h1>
           {blogArticles.map((blogArticle) => {
-            return <BlogCard id={blogArticle.id} BlogData={blogArticle} />;
+            return <BlogCard key={blogArticle.id} BlogData={blogArticle} />;
           })}
         </div>
       </section>
@@ -23,7 +23,7 @@ const BlogCard = ({ BlogData }) => {
     <div className="blog-card">
       <img src={BlogData.img} alt={BlogData.imgAlt} />
       <div>
-        <Link to={`/blog/${BlogData.id}`}>
+        <Link to={`/blog/${BlogData.url}`}>
           <h1>{BlogData.title}</h1>
         </Link>
         <p>

@@ -34,7 +34,7 @@ function App() {
               <BlogHome />
             </div>
           </Route>
-          <Route path="/blog/:id" children={<BlogArticle />}></Route>
+          <Route path="/blog/:url" children={<BlogArticle />}></Route>
         </Switch>
       </div>
     </Router>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReactMarkdownWithHtml from "react-markdown/with-html";
 import gfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -6,18 +6,13 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import BlogData from "./BlogData";
 import { Link, useParams } from "react-router-dom";
+import NavbarBlog from "../NavbarBlog";
 
 const BlogArticle = () => {
-  const { title, setTitle } = useState("Article name");
-  const { content, setContent } = useState("Article content");
-  const { id } = useParams();
-  useEffect(() => {
-    const newBlog = BlogData.find(
-      (blogArticle) => blogArticle.id === parseInt(id)
-    );
-    setTitle(newBlog.title);
-    setContent(newBlog.content);
-  }, []);
+  const { url } = useParams();
+  const fetchedBlogArticle = BlogData.find(
+    (blogArticle) => blogArticle.url === url
+  );
 
   const markdownRenderers = {
     code: ({ language, value }) => {
@@ -33,14 +28,23 @@ const BlogArticle = () => {
 
   return (
     <>
-      <h1>{title}</h1>
-      <ReactMarkdownWithHtml
-        renderers={markdownRenderers}
-        plugins={[gfm]}
-        children={content}
-        allowDangerousHtml
-      />
-      <Link to="/blog">Back to Articles</Link>
+      <NavbarBlog />
+      <div className="container-fluid p-0" id="page-top">
+        <section className="resume-section">
+          <div className="resume-section-content">
+            <h1>{fetchedBlogArticle.title}</h1>
+            <ReactMarkdownWithHtml
+              renderers={markdownRenderers}
+              plugins={[gfm]}
+              children={fetchedBlogArticle.content}
+              allowDangerousHtml
+            />
+            <Link className="btn" to="/blog">
+              Back to Articles
+            </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

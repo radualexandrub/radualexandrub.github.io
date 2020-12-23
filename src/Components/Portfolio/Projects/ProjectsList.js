@@ -3,6 +3,7 @@ import projectsList from "./ProjectData";
 import Categories from "./ProjectCategories";
 import ProjectModal from "./ProjectModal";
 import { useModalContext } from "./ProjectModalContext";
+import imgGitHub from "../../../img/imgGitHub.jpg";
 
 const allCategories = [
   "all",
@@ -12,22 +13,32 @@ const allCategories = [
 const ProjectsList = () => {
   const [projects, setProjects] = useState(projectsList);
   const [categories] = useState(allCategories);
+  const [isAllCategoriesDisplayed, setIsAllCategoriesDisplayed] = useState(
+    true
+  );
 
   const filterItems = (category) => {
     if (category === "all") {
       setProjects(projectsList);
+      setIsAllCategoriesDisplayed(true);
       return;
     }
     const newProjectsList = projectsList.filter(
       (item) => item.category === category
     );
     setProjects(newProjectsList);
+    setIsAllCategoriesDisplayed(false);
   };
 
   const {
     openProjectModal,
     populateProjectModalInformation,
   } = useModalContext();
+
+  const openProjectModalAndPopulate = (project) => {
+    openProjectModal();
+    populateProjectModalInformation(project);
+  };
 
   return (
     <section className="resume-section" id="projects">
@@ -44,15 +55,20 @@ const ProjectsList = () => {
 
             return (
               <div key={id}>
-                <img src={[img[0]]} alt={imgAlt} />
-                <h4>{title}</h4>
+                <img
+                  onClick={() => openProjectModalAndPopulate(project)}
+                  src={[img[0]]}
+                  alt={imgAlt}
+                />
+                <h4>
+                  <a onClick={() => openProjectModalAndPopulate(project)}>
+                    {title}
+                  </a>
+                </h4>
                 <button
                   key={id}
                   className="project-btn"
-                  onClick={() => {
-                    openProjectModal();
-                    populateProjectModalInformation(project);
-                  }}
+                  onClick={() => openProjectModalAndPopulate(project)}
                 >
                   Explore
                 </button>
@@ -64,6 +80,32 @@ const ProjectsList = () => {
               </div>
             );
           })}
+
+          {isAllCategoriesDisplayed ? (
+            <div>
+              <img src={imgGitHub} alt="Radu Alexandru Bulai GitHub" />
+              <h4>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/radualexandrub?tab=repositories"
+                >
+                  See even more projects on GitHub
+                </a>
+              </h4>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/radualexandrub?tab=repositories"
+                className="project-btn"
+              >
+                Explore
+              </a>
+              <ul className="tags">
+                <li>GitHub</li>
+              </ul>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
