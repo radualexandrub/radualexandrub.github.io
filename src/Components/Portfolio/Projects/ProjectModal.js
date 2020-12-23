@@ -5,6 +5,7 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel } from "react-responsive-carousel";
 import "../../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+import LazyLoad from "react-lazyload";
 
 export default function ProjectModal() {
   const {
@@ -40,24 +41,28 @@ export default function ProjectModal() {
         </button>
         <h3>{projectModalInformation.title}</h3>
         <div className="modal-container-image-desc">
-          {projectModalInformation.img ? (
-            <Carousel
-              showThumbs={false}
-              swipeable={true}
-              transitionTime={200}
-              useKeyboardArrows={true}
-            >
-              {projectModalInformation.img.map((image) => {
-                return (
-                  <img
-                    key={projectModalInformation.id}
-                    src={image}
-                    alt={projectModalInformation.imgAlt}
-                  ></img>
-                );
-              })}
-            </Carousel>
-          ) : null}
+          <LazyLoad height={"100%"}>
+            {projectModalInformation.img ? (
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                swipeable={true}
+                transitionTime={200}
+                useKeyboardArrows={true}
+                infiniteLoop={true}
+              >
+                {projectModalInformation.img.map((image) => {
+                  return (
+                    <img
+                      key={projectModalInformation.id}
+                      src={image}
+                      alt={projectModalInformation.imgAlt}
+                    ></img>
+                  );
+                })}
+              </Carousel>
+            ) : null}
+          </LazyLoad>
           <div>
             <p>{projectModalInformation.description}</p>
             <div>

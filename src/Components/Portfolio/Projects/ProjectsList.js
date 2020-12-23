@@ -55,11 +55,7 @@ const ProjectsList = () => {
 
             return (
               <div key={id}>
-                <img
-                  onClick={() => openProjectModalAndPopulate(project)}
-                  src={[img[0]]}
-                  alt={imgAlt}
-                />
+                <img src={[img[0]]} alt={imgAlt} />
                 <h4>
                   <a onClick={() => openProjectModalAndPopulate(project)}>
                     {title}

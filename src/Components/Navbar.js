@@ -3,7 +3,6 @@ import imgProfile from "../img/imgProfile.jpg";
 import { useState, useRef, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import DarkModeToggle from "../Components/DarkModeToggle";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -119,6 +118,18 @@ function Navbar() {
             <LinkScroll
               activeClass="active"
               className="nav-link"
+              to="blog"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Blog
+            </LinkScroll>
+          </li>
+          <li className="nav-item">
+            <LinkScroll
+              activeClass="active"
+              className="nav-link"
               to="contact"
               spy={true}
               smooth={true}
@@ -126,12 +137,6 @@ function Navbar() {
             >
               Contact
             </LinkScroll>
-          </li>
-          <hr />
-          <li className="nav-item">
-            <Link className="nav-link" to="/blog">
-              Blog
-            </Link>
           </li>
           <br />
           <DarkModeToggle />

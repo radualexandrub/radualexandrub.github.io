@@ -11,7 +11,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --bg-color: #fff;
+  --bg-color: #fdfdfd;
   --modal-bg: #fff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -55,13 +55,6 @@ td {
   padding: 5px;
   text-align: left;
   border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-/* Image within a blog article*/
-@media (max-width: 768px) {
-  center p img {
-    width: 100%;
-  }
 }
 
 /* Project card */
@@ -139,6 +132,35 @@ td {
   text-decoration: none;
 }
 
+/* Blog Article page */
+
+/* Image within a blog article*/
+@media (max-width: 768px) {
+  center p img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .resume-section-content-blog-article {
+    margin: 0 auto 0 auto;
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .resume-section-content-blog-article {
+    margin: 0 auto 0 auto;
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-section-content-blog-article {
+    max-width: 100%;
+  }
+}
+
 /* Blog-post-card */
 
 @media (min-width: 768px) {
@@ -150,7 +172,7 @@ td {
     max-width: 25rem;
   }
 
-  .blog-card:nth-child(odd) {
+  .blog-card:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
@@ -1044,7 +1066,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #121416 !important;
+  background-color: #0e1011 !important;
 }
 
 a.bg-primary:focus,
@@ -2419,17 +2441,14 @@ Modal
   max-width: 100%;
 }
 
-.modal-container p {
+.modal-container div p {
   color: var(--font-text-color);
   margin: 0.5rem;
-}
-
-.modal-container div {
-  margin: 0 0 5px 0;
+  min-width: 20rem;
 }
 
 .modal-container div a {
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0px 10px;
 }
 
 .close-modal-btn {

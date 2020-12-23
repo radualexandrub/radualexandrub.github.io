@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactMarkdownWithHtml from "react-markdown/with-html";
 import gfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -26,12 +26,16 @@ const BlogArticle = () => {
     },
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <NavbarBlog />
       <div className="container-fluid p-0" id="page-top">
         <section className="resume-section">
-          <div className="resume-section-content">
+          <div className="resume-section-content-blog-article">
             <h1>{fetchedBlogArticle.title}</h1>
             <ReactMarkdownWithHtml
               renderers={markdownRenderers}

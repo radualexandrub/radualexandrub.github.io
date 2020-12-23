@@ -4,6 +4,7 @@ import Education from "./Components/Portfolio/Education";
 import Skills from "./Components/Portfolio/Skills";
 import Projects from "./Components/Portfolio/Projects/ProjectsList";
 import { ProjectModalProvider } from "./Components/Portfolio/Projects/ProjectModalContext";
+import Blog from "./Components/Portfolio/Blog";
 import Contact from "./Components/Portfolio/Contact";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
               <ProjectModalProvider>
                 <Projects />
               </ProjectModalProvider>
+              <Blog />
               <Contact />
             </div>
           </Route>

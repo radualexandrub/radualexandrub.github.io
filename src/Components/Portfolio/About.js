@@ -1,3 +1,5 @@
+import { Link as LinkScroll } from "react-scroll";
+
 function About() {
   return (
     <>
@@ -19,6 +21,17 @@ function About() {
             </strong>
             as well as <strong>Machine Learning and Computer Vision</strong>.
           </p>
+          <div className="subheading mb-4">
+            <LinkScroll
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Contact Me
+            </LinkScroll>
+          </div>
         </div>
       </section>
       <hr className="m-0" />
