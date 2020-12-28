@@ -2,6 +2,8 @@
 
 [www.radubulai.com](https://radubulai.com)
 
+[www.radubulai.com/blog](https://radubulai.com/blog)
+
 ## Credits and Resources used
 
 Tutorials:
@@ -21,6 +23,10 @@ Open-Source Resources and Packages:
 - [React-Markdown - Markdown component for React](https://github.com/remarkjs/react-markdown)
 - [React-Syntax-Highlighter for Markdown](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 - [Remark-gfm plugin for React-Markdown](https://github.com/remarkjs/remark-gfm)
+- [React-lazyload package](https://www.npmjs.com/package/react-lazyload)
+- [React-meta-tags package](https://www.npmjs.com/package/react-meta-tags)
+- [React-gh-pages for deploying React App to GitHub Pages](https://github.com/gitname/react-gh-pages)
+- [React-gtm-module for integrating Google Tag Manager in React App](https://www.npmjs.com/package/react-gtm-module)
 
 Images:
 

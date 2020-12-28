@@ -1,5 +1,5 @@
 import React from "react";
-import imgProfile from "../img/imgProfile.jpg";
+import imgProfile from "../img/imgProfile.webp";
 import { useState, useRef, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import DarkModeToggle from "../Components/DarkModeToggle";

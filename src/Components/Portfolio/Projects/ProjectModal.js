@@ -36,10 +36,6 @@ export default function ProjectModal() {
       }`}
     >
       <div className="modal-container" ref={modalRef}>
-        <button className="close-modal-btn" onClick={closeProjectModal}>
-          close
-        </button>
-        <h3>{projectModalInformation.title}</h3>
         <div className="modal-container-image-desc">
           <LazyLoad height={"100%"}>
             {projectModalInformation.img ? (
@@ -64,27 +60,35 @@ export default function ProjectModal() {
             ) : null}
           </LazyLoad>
           <div>
-            <p>{projectModalInformation.description}</p>
+            <button className="close-modal-btn" onClick={closeProjectModal}>
+              close
+            </button>
+            <h3>{projectModalInformation.title}</h3>
             <div>
-              {projectModalInformation.livelink ? (
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icon"
-                  href={projectModalInformation.livelink}
-                  title="CodingTranquillity Blog"
-                >
-                  <FontAwesomeIcon icon={faDesktop} /> View Live
-                </a>
-              ) : null}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon"
-                href={projectModalInformation.github}
-              >
-                <FontAwesomeIcon icon={faGithub} /> GitHub
-              </a>
+              <p>{projectModalInformation.description}</p>
+              <div>
+                {projectModalInformation.livelink ? (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon"
+                    href={projectModalInformation.livelink || "#"}
+                    title={projectModalInformation.title}
+                  >
+                    <FontAwesomeIcon icon={faDesktop} /> View Live
+                  </a>
+                ) : null}
+                {projectModalInformation.github ? (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon"
+                    href={projectModalInformation.github}
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>

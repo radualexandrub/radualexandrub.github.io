@@ -10,6 +10,8 @@ const BlogData = [
     url: "embrace-macros-hotstrings-into-your-dev-life-with-autohotkey",
     date: "23 Oct, 2020",
     minread: "7",
+    description:
+      "What is AutoHotkey? It's a language that can increase your productivity exponentially, by creating your own keyboard macros.",
     content: `
 _[Cover image by Karol D, on Pexels.com](https://www.pexels.com/photo/black-lighted-gaming-keyboard-841228/)_
 
@@ -313,6 +315,8 @@ R.B.
       "embrace-mouse-macros-into-your-dev-life-to-increase-your-productivity-with-ahk",
     date: "30 Oct, 2020",
     minread: "7",
+    description:
+      "Learn AutoHotkey Mouse Macros in order to increase your general productivity.",
     content: `
 ## Contents
 - [Short Intro](#ShortIntro)
@@ -561,6 +565,8 @@ R.B.
       "use-hotstrings-in-your-dev-life-to-increase-your-daily-productivity-with-ahk",
     date: "7 Nov, 2020",
     minread: "4",
+    description:
+      "What are AutoHotkey hotstrings? Hotstrings are your best friend in order to autocomplete syntaxes at a glance.",
     content: `
 
 ## Contents
@@ -870,6 +876,7 @@ R.B.
     url: "top-8-macros-for-developers-to-maximize-their-productivity-with-ahk",
     date: "12 Nov, 2020",
     minread: "8",
+    description: "Top AutoHotKey Developer macros to maximize productivity.",
     content: `
 ## Contents
 
@@ -1402,7 +1409,7 @@ R.B.
   },
   {
     id: 5,
-    title: "How to add Like/Unlike button to your Django Blog",
+    title: "How to add Like button to your Django Blog",
     category: "Python",
     img:
       "https://res.cloudinary.com/practicaldev/image/fetch/s--mtnQn7OU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/azz3kd1q4596zdz2z8qg.jpg",
@@ -1411,6 +1418,8 @@ R.B.
     url: "how-to-add-like-unlike-button-to-your-django-blog",
     date: "14 Oct, 2020",
     minread: "3",
+    description:
+      "Learn how to create a Like Button in Django just in a few steps.",
     content: `
 In this mini-tutorial, we will add a Like/Unlike functionality to our Django Blog. As a note, we will implement this feature while using a class-based view for our BlogPost DetailView.
 
@@ -1544,6 +1553,8 @@ And we are done!
     url: "how-to-create-a-comment-section-for-your-django-blog",
     date: "28 Sep, 2020",
     minread: "5",
+    description:
+      "Learn how to create a comment section in Django in a few easy steps.",
     content: `
 Hi!
 
@@ -1761,6 +1772,7 @@ R.B.
       "how-to-add-sitemap-xml-to-your-django-blog-and-make-it-work-on-heroku",
     date: "21 Sep, 2020",
     minread: "3",
+    description: "Learn how to create a sitemap in Django.",
     content: `
 Okay, I've spent a little to much time to figure this out, but here's my version of the **Simplest Way to Add sitemap.xml to a Django App that is hosted on Heroku**. This will also solve the error: _"Internal Error 500"_ when trying to access /sitemap.xml from Heroku live app (production).
 

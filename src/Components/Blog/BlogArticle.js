@@ -7,6 +7,7 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import BlogData from "./BlogData";
 import { Link, useParams } from "react-router-dom";
 import NavbarBlog from "../NavbarBlog";
+import MetaTags from "react-meta-tags";
 
 const BlogArticle = () => {
   const { url } = useParams();
@@ -32,6 +33,20 @@ const BlogArticle = () => {
 
   return (
     <>
+      <MetaTags>
+        <title>{fetchedBlogArticle.title}</title>
+        <meta name="description" content={fetchedBlogArticle.description} />
+        <meta property="og:title" content={fetchedBlogArticle.title} />
+        <meta
+          property="og:description"
+          content={fetchedBlogArticle.description}
+        />
+        <meta property="og:image" content={fetchedBlogArticle.img} />
+        <meta
+          property="og:url"
+          content={"https://radubulai.com/blog/" + fetchedBlogArticle.url}
+        />
+      </MetaTags>
       <NavbarBlog />
       <div className="container-fluid p-0" id="page-top">
         <section className="resume-section">

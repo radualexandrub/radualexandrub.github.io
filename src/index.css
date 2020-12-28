@@ -87,7 +87,8 @@ td {
   width: 100%;
 }
 
-.project-container div h4 {
+.project-container div h3 {
+  font-size: 1.5rem;
   color: #fff;
   margin: 10px 10px 0px 10px;
 }
@@ -1066,7 +1067,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #0e1011 !important;
+  background-color: #121416 !important;
 }
 
 a.bg-primary:focus,
@@ -2437,6 +2438,12 @@ Modal
   margin: 2rem 5px 5px 5px;
 }
 
+@media (max-width: 768px) {
+  .modal-container h3 {
+    margin: 5px;
+  }
+}
+
 .modal-container img {
   max-width: 100%;
 }
@@ -2444,7 +2451,7 @@ Modal
 .modal-container div p {
   color: var(--font-text-color);
   margin: 0.5rem;
-  min-width: 20rem;
+  min-width: 23rem;
 }
 
 .modal-container div a {
@@ -2454,7 +2461,7 @@ Modal
 .close-modal-btn {
   position: absolute;
   top: 0.25rem;
-  right: 0.5rem;
+  right: 1.2rem;
   font-size: 1rem;
   background: transparent;
   border-color: transparent;

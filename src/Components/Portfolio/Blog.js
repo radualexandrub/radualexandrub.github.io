@@ -1,7 +1,7 @@
 import BlogData from "../Blog/BlogData";
 import BlogCard from "../Blog/BlogCard";
 import { Link } from "react-router-dom";
-import imgBlog from "../../img/imgBlog.jpg";
+import imgBlog from "../../img/imgBlog.webp";
 
 export default function Blog() {
   return (
@@ -19,7 +19,7 @@ export default function Blog() {
               <h1>View all my Blog Articles</h1>
             </Link>
             <p>
-              See all my blog articles <Link to={`/blog`}>here</Link> or on{" "}
+              See all my <Link to={`/blog`}>blog articles here</Link> or on{" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"

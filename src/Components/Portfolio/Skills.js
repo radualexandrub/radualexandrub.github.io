@@ -49,7 +49,7 @@ export default function Skills() {
                 <FontAwesomeIcon icon={faTerminal} />
               </span>
               Programming:{" "}
-              <strong>Python, JavaScript, SQL, Java (Android SDK), C</strong>
+              <strong>Python, JavaScript, SQL, Java (Android SDK)</strong>
             </li>
             <li>
               <span className="fa-li">
@@ -65,7 +65,10 @@ export default function Skills() {
           <div className="subheading mb-2">Frameworks and Tools</div>
           <ul>
             <li>
-              <strong>React, Django</strong>
+              <strong>React</strong> (Front-end)
+            </li>
+            <li>
+              <strong>Django</strong> (Back-end)
             </li>
             <li>
               <strong>Keras</strong>

@@ -3,7 +3,7 @@ import projectsList from "./ProjectData";
 import Categories from "./ProjectCategories";
 import ProjectModal from "./ProjectModal";
 import { useModalContext } from "./ProjectModalContext";
-import imgGitHub from "../../../img/imgGitHub.jpg";
+import imgGitHub from "../../../img/imgGitHub.webp";
 
 const allCategories = [
   "all",
@@ -56,11 +56,11 @@ const ProjectsList = () => {
             return (
               <div key={id}>
                 <img src={[img[0]]} alt={imgAlt} />
-                <h4>
+                <h3>
                   <a onClick={() => openProjectModalAndPopulate(project)}>
                     {title}
                   </a>
-                </h4>
+                </h3>
                 <button
                   key={id}
                   className="project-btn"
@@ -80,7 +80,7 @@ const ProjectsList = () => {
           {isAllCategoriesDisplayed ? (
             <div>
               <img src={imgGitHub} alt="Radu Alexandru Bulai GitHub" />
-              <h4>
+              <h3>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -88,7 +88,7 @@ const ProjectsList = () => {
                 >
                   See even more projects on GitHub
                 </a>
-              </h4>
+              </h3>
               <a
                 target="_blank"
                 rel="noopener noreferrer"

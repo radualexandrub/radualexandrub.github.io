@@ -19,6 +19,7 @@ export default function Contact() {
           <br />
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://drive.google.com/file/d/1LWma3CprEUah28nkyBCMdLo0bLGTMi0K/view?usp=sharing"
           >
             View my Resume
