@@ -13,13 +13,6 @@ import BlogHome from "./Components/Blog/BlogHome";
 import NavbarBlog from "./Components/NavbarBlog";
 import BlogArticle from "./Components/Blog/BlogArticle";
 import MetaTags from "react-meta-tags";
-import TagManager from "react-gtm-module";
-
-const tagManagerArgs = {
-  gtmId: "GTM-NV2B7ND",
-};
-
-TagManager.initialize(tagManagerArgs);
 
 function App() {
   return (
@@ -49,7 +42,7 @@ function App() {
               />
               <meta
                 property="og:image"
-                content="https://lh3.googleusercontent.com/GATYtsVPjcE_Fy794YsIrpP0nuIq5B0fp7pNW_m-hHZiL_SHsk2oC5PBa5w-qi-KvN1TRrmxP8XrzCp3WrZLF1AWVdtMKO726ly0ILChPISXTtX2VO3umqq3yjINOPbFMmsTEMeqfTU=w2400"
+                content="https://lh3.googleusercontent.com/2n6l-SfYcPkDV-ICfAHlpBRMacS-ZD22SVp9fKuGvyjHvk9F9ZR3LrAGs6B7CqjGlj_-vtKlEcJgs9IPZ1umDjq2M8mpDMB1As2ZTX_lchf0GBYxHgvUhAFzvBO2btIPJw_IDzy4v2U=w2400"
               />
               <meta property="og:url" content="https://radubulai.com" />
               <meta name="theme-color" content="#121416" />

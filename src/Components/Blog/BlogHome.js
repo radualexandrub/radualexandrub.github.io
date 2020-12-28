@@ -23,7 +23,7 @@ const BlogHome = () => {
         />
         <meta
           property="og:image"
-          content="https://lh3.googleusercontent.com/GATYtsVPjcE_Fy794YsIrpP0nuIq5B0fp7pNW_m-hHZiL_SHsk2oC5PBa5w-qi-KvN1TRrmxP8XrzCp3WrZLF1AWVdtMKO726ly0ILChPISXTtX2VO3umqq3yjINOPbFMmsTEMeqfTU=w2400"
+          content="https://lh3.googleusercontent.com/kNROru1jxtNWYXiRKFmJSnStqrmjziYJcYCCNpYrPrC8CmUksyxV3FNdyvnp1AWyJcBZvpFT46LWYzzKrNrNpsX4L_dyfaW9HcZPrHkx7kOlaTVR5pVK7fubfQ94II7gYFT0DJT6F3w=w2400"
         />
         <meta property="og:url" content="https://radubulai.com/blog" />
       </MetaTags>

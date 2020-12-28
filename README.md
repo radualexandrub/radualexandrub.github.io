@@ -4,6 +4,16 @@
 
 [www.radubulai.com/blog](https://radubulai.com/blog)
 
+## Screenshots
+
+![Radu Alexandru Bulai Portfolio](./README_screenshots/RaduPortfolioBlog01.jpg)
+
+![Radu Alexandru Bulai Blog](./README_screenshots/RaduPortfolioBlog02.jpg)
+
+![Radu Alexandru Bulai Blog Articles](./README_screenshots/RaduPortfolioBlog03.jpg)
+
+![Radu Alexandru Bulai Projects](./README_screenshots/RaduPortfolioBlog04.jpg)
+
 ## Credits and Resources used
 
 Tutorials:
@@ -27,13 +37,14 @@ Open-Source Resources and Packages:
 - [React-meta-tags package](https://www.npmjs.com/package/react-meta-tags)
 - [React-gh-pages for deploying React App to GitHub Pages](https://github.com/gitname/react-gh-pages)
 - [React-gtm-module for integrating Google Tag Manager in React App](https://www.npmjs.com/package/react-gtm-module)
+- [React Single Page App for GitHub Page](https://github.com/rafgraph/spa-github-pages)
 
 Images:
 
 - [MockUPhone - Screenshots device mockups generator](https://mockuphone.com/)
 - [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) - Free Stock Photos with No Licenses Required
 
-## **My steps / My journey** for improving Google SEO (Search Engine Optimization):
+## My steps to improve Google SEO (Search Engine Optimization):
 
 - Add these _meta tags_ in your `index.html`:
 
