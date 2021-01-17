@@ -24,6 +24,7 @@ Tutorials:
 Open-Source Resources and Packages:
 
 - [Resume Theme from StartBootstrap.com which I highly modified for my needs](https://startbootstrap.com/theme/resume)
+- [Add background image to the first section (Hero Image)](https://codetheweb.blog/fullscreen-image-hero/)
 - [Devicon - Icons for programming languages & development tools](https://devicons.github.io/devicon)
 - [Font Awesome npm for React](https://fontawesome.com/how-to-use/on-the-web/using-with/react)
 - [Implement Smooth Scrolling to Anchor in React](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react#step-2-%E2%80%94-installing-and-configuring-react-scroll) using [react-scroll-to](https://github.com/ganderzz/react-scroll-to)
@@ -43,6 +44,36 @@ Images:
 
 - [MockUPhone - Screenshots device mockups generator](https://mockuphone.com/)
 - [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) - Free Stock Photos with No Licenses Required
+
+## Project Structure
+
+```
+src/
+┣ Components/
+┃ ┣ Blog/
+┃ ┃ ┣ BlogArticle.js
+┃ ┃ ┣ BlogCard.js
+┃ ┃ ┣ BlogData.js
+┃ ┃ ┗ BlogHome.js
+┃ ┣ Portfolio/
+┃ ┃ ┣ Projects/
+┃ ┃ ┃ ┣ ProjectCategories.js
+┃ ┃ ┃ ┣ ProjectData.js
+┃ ┃ ┃ ┣ ProjectModal.js
+┃ ┃ ┃ ┣ ProjectModalContext.js
+┃ ┃ ┃ ┗ ProjectsList.js
+┃ ┃ ┣ About.js
+┃ ┃ ┣ Blog.js
+┃ ┃ ┣ Contact.js
+┃ ┃ ┣ Education.js
+┃ ┃ ┗ Skills.js
+┃ ┣ DarkModeToggle.js
+┃ ┣ Navbar.js
+┃ ┗ NavbarBlog.js
+┣ App.js
+┣ index.css
+┗ index.js
+```
 
 ## My steps to improve Google SEO (Search Engine Optimization):
 
