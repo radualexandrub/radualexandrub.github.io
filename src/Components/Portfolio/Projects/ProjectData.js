@@ -19,7 +19,7 @@ const ProjectData = [
     id: 1,
     title:
       "Django Blog with Authentication, Coding-Articles, Likes and Comments",
-    category: "Python",
+    category: "Web Apps",
     img: [ProjectBlog01, ProjectBlog02, ProjectBlog04],
     imgAlt: "Django Blog with Users",
     tags: ["Python", "Django", "Heroku"],
@@ -31,7 +31,7 @@ const ProjectData = [
   {
     id: 2,
     title: "Database Management with Multiple Tables and Authentication",
-    category: "Android",
+    category: "Android Apps",
     img: [AndroidDB01, AndroidDB02, AndroidDB03],
     imgAlt: "Android Database Management SQLite",
     tags: ["Android", "Java", "SQLite"],
@@ -44,7 +44,7 @@ const ProjectData = [
   {
     id: 3,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
-    category: "Python",
+    category: "Other",
     img: [AgeClass01, AgeClass02, AgeClass03],
     imgAlt: "Age and Gender Classification Raspberry Pi MobileNet",
     tags: ["Python", "Keras", "OpenCV"],
@@ -57,7 +57,7 @@ const ProjectData = [
   {
     id: 4,
     title: "Age Classification Android App",
-    category: "Android",
+    category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
     imgAlt: "Android ToDo Journal Quiz App",
     tags: ["TensorFlow Lite", "Android", "Python"],
@@ -69,7 +69,7 @@ const ProjectData = [
   {
     id: 5,
     title: "ToDo-Journal-Timer-Quiz App",
-    category: "Android",
+    category: "Android Apps",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],
     imgAlt: "Android ToDo Journal Quiz App",
     tags: ["Android", "Java"],

@@ -30,9 +30,6 @@ export default function Skills() {
               <i className="devicon-android-plain" title="Android SDK"></i>
             </li>
             <li className="list-inline-item">
-              <i className="devicon-c-plain" title="C"></i>
-            </li>
-            <li className="list-inline-item">
               <i className="devicon-html5-plain" title="HTML5"></i>
             </li>
             <li className="list-inline-item">

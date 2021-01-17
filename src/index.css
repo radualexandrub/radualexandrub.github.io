@@ -41,6 +41,11 @@
   --modal-bg: #202325;
 }
 
+::selection {
+  color: #fff;
+  background: #2b627c;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -57,8 +62,11 @@ td {
   border-bottom: 1px solid rgb(128, 128, 128);
 }
 
-/* Project card */
+img {
+  max-width: 100%;
+}
 
+/* Project card */
 @media (min-width: 768px) {
   .project-container {
     display: inline-grid;
@@ -960,24 +968,6 @@ a > code {
   border-bottom-right-radius: 0.25rem;
 }
 
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 1rem 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
-@keyframes progress-bar-stripes {
-  from {
-    background-position: 1rem 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
 .media {
   display: flex;
   align-items: flex-start;
@@ -1011,59 +1001,6 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel-item {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-item {
-    transition: none;
-  }
-}
-
-@-webkit-keyframes spinner-border {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinner-border {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: none;
-  }
 }
 
 .bg-primary {
@@ -2257,6 +2194,7 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 0.75rem;
+  transition: background-color 150ms ease-in-out;
 }
 
 .social-icons .social-icon:last-child {
@@ -2269,6 +2207,23 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+}
+
+.dev-icons li:hover {
+  animation-name: bounce;
+  animation-duration: 260ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
 section.resume-section {
