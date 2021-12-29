@@ -1,0 +1,3 @@
+npm start -- starts development server on http://localhost:3000/
+npm build -- statically generate /build folder
+npm deploy

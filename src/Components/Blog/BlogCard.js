@@ -6,7 +6,7 @@ const BlogCard = ({ BlogData }) => {
       <img src={BlogData.img} alt={BlogData.imgAlt} />
       <div>
         <Link to={`/blog/${BlogData.url}`}>
-          <h1>{BlogData.title}</h1>
+          <div className="blog-card--title">{BlogData.title}</div>
         </Link>
         <p>
           {BlogData.date} · {BlogData.minread} min read

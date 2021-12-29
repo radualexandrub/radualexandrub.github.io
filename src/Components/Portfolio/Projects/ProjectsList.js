@@ -6,21 +6,22 @@ import { useModalContext } from "./ProjectModalContext";
 import imgGitHub from "../../../img/imgGitHub.webp";
 
 const allCategories = [
-  "all",
+  "All",
   ...new Set(projectsList.map((item) => item.category)),
 ];
 
 const ProjectsList = () => {
   const [projects, setProjects] = useState(projectsList);
   const [categories] = useState(allCategories);
-  const [isAllCategoriesDisplayed, setIsAllCategoriesDisplayed] = useState(
-    true
-  );
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [isAllCategoriesDisplayed, setIsAllCategoriesDisplayed] =
+    useState(true);
 
   const filterItems = (category) => {
-    if (category === "all") {
+    if (category === "All") {
       setProjects(projectsList);
       setIsAllCategoriesDisplayed(true);
+      setActiveCategory(category);
       return;
     }
     const newProjectsList = projectsList.filter(
@@ -28,12 +29,11 @@ const ProjectsList = () => {
     );
     setProjects(newProjectsList);
     setIsAllCategoriesDisplayed(false);
+    setActiveCategory(category);
   };
 
-  const {
-    openProjectModal,
-    populateProjectModalInformation,
-  } = useModalContext();
+  const { openProjectModal, populateProjectModalInformation } =
+    useModalContext();
 
   const openProjectModalAndPopulate = (project) => {
     openProjectModal();
@@ -47,7 +47,11 @@ const ProjectsList = () => {
 
         <ProjectModal />
 
-        <Categories categories={categories} filterItems={filterItems} />
+        <Categories
+          categories={categories}
+          filterItems={filterItems}
+          activeCategory={activeCategory}
+        />
 
         <div className="project-container">
           {projects.map((project) => {

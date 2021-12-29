@@ -25,7 +25,8 @@ const ProjectData = [
     tags: ["Python", "Django", "Heroku"],
     description:
       "Application Main Features:\n- Responsive UI for desktop and mobile using Bootstrap4\n- Registered users can leave likes and comments on each blog article\n- Rich Text-Editor for blog articles and comments (with text formatting, code snippets, and more using CKEditor)\n- Media Files are stored using Google Drive Storage (free alternative to Amazon S3 Bucket)",
-    github: "https://github.com/radualexandrub/CodingTranquillity-DjangoBlog",
+    github:
+      "https://github.com/radualexandrub/CodingTranquillity-DjangoWebBlog",
     livelink: "https://codingtranquillity.herokuapp.com/",
   },
   {

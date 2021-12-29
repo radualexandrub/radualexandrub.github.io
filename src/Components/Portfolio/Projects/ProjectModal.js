@@ -8,11 +8,8 @@ import "../../../../node_modules/react-responsive-carousel/lib/styles/carousel.m
 import LazyLoad from "react-lazyload";
 
 export default function ProjectModal() {
-  const {
-    isProjectModalOpen,
-    closeProjectModal,
-    projectModalInformation,
-  } = useModalContext();
+  const { isProjectModalOpen, closeProjectModal, projectModalInformation } =
+    useModalContext();
 
   const modalRef = useRef(null);
   useEffect(() => {
@@ -63,9 +60,11 @@ export default function ProjectModal() {
             <button className="close-modal-btn" onClick={closeProjectModal}>
               close
             </button>
-            <h3>{projectModalInformation.title}</h3>
+            <div className="modal--title">{projectModalInformation.title}</div>
             <div>
-              <p>{projectModalInformation.description}</p>
+              <p className="modal--description">
+                {projectModalInformation.description}
+              </p>
               <div>
                 {projectModalInformation.livelink ? (
                   <a

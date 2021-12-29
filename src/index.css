@@ -93,6 +93,8 @@ img {
 }
 .project-container img {
   width: 100%;
+  aspect-ratio: 1.6 / 1;
+  object-fit: cover;
 }
 
 .project-container div h3 {
@@ -209,14 +211,22 @@ img {
   border-radius: var(--radius);
 }
 
-.blog-card div {
+.blog-card > div {
   width: 100%;
   padding: 1rem;
 }
 
-.blog-card h1 {
+.blog-card h1,
+.blog-card--title {
   font-size: 2rem;
   color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .blog-card p {
@@ -2268,7 +2278,8 @@ section.resume-section .resume-section-content {
   transition: var(--transition);
   border-radius: var(--radius);
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn.activeTab {
   color: #fff;
   background: #2b627c;
 }
@@ -2375,6 +2386,17 @@ Modal
   place-items: center;
   position: relative;
 }
+.modal-container .modal--title {
+  color: var(--font-header-color);
+  margin: 2rem 5px 5px 5px;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 
 @media (min-width: 720px) {
   .modal-container-image-desc {
@@ -2388,13 +2410,8 @@ Modal
   }
 }
 
-.modal-container h3 {
-  color: var(--font-header-color);
-  margin: 2rem 5px 5px 5px;
-}
-
 @media (max-width: 768px) {
-  .modal-container h3 {
+  .modal-container .modal--title {
     margin: 5px;
   }
 }
@@ -2403,10 +2420,11 @@ Modal
   max-width: 100%;
 }
 
-.modal-container div p {
+.modal-container .modal--description {
   color: var(--font-text-color);
   margin: 0.5rem;
   min-width: 23rem;
+  text-align: justify;
 }
 
 .modal-container div a {

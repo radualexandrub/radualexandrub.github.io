@@ -16,7 +16,7 @@ export default function Blog() {
           <img src={imgBlog} alt="Radu Bulai Blog" />
           <div>
             <Link to={`/blog`}>
-              <h1>View all my Blog Articles</h1>
+              <div className="blog-card--title">View all my Blog Articles</div>
             </Link>
             <p>
               See all my <Link to={`/blog`}>blog articles here</Link> or on{" "}
