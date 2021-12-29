@@ -33,7 +33,7 @@ function Navbar() {
     >
       <LinkScroll
         className="navbar-brand"
-        to="page-top"
+        to="about"
         spy={true}
         smooth={true}
         duration={200}
@@ -54,6 +54,7 @@ function Navbar() {
 
       <button
         className="navbar-toggler"
+        aria-label="Open the navigation menu"
         type="button"
         onClick={() => toggleNavbarOpen()}
       >

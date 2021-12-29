@@ -5,21 +5,17 @@ function About() {
     <>
       <section className="resume-section hero" id="about">
         <div className="resume-section-content">
-          <h1 className="mb-0">
-            Radu-Alexandru <span className="text-primary">Bulai</span>
-          </h1>
+          <div className="mb-0 hero--title">
+            I build amazing <span className="text-primary">experiences</span>{" "}
+            between your business and your clients{" "}
+          </div>
           <br />
-          <p className="lead mb-4">
-            Hi!
-            <br />
-            I'm a current graduate of the Faculty of Electronics, UPB, Computer
-            Science Department.
-            <br />
-            I'm passionate about{" "}
-            <strong>
-              Software Engineering, Front-end and Back-end Development,{" "}
-            </strong>
-            as well as <strong>Machine Learning and Computer Vision</strong>.
+          <p className="lead mb-4 hero--description">
+            Hi, I’m a{" "}
+            <h1 className="normalText">Junior Web Developer and Designer</h1>{" "}
+            based on Bucharest, Romania. For more than a year, I developed
+            beautiful and responsive websites that satisfied all the needs of
+            clients in order to launch or improve their current businesses.
           </p>
           <div className="subheading mb-4">
             <LinkScroll

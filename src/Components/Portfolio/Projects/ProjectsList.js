@@ -58,25 +58,27 @@ const ProjectsList = () => {
             const { id, title, category, img, imgAlt } = project;
 
             return (
-              <div key={id}>
+              <div className="project" key={id}>
                 <img src={[img[0]]} alt={imgAlt} />
-                <h3>
-                  <a onClick={() => openProjectModalAndPopulate(project)}>
-                    {title}
-                  </a>
-                </h3>
-                <button
-                  key={id}
-                  className="project-btn"
-                  onClick={() => openProjectModalAndPopulate(project)}
-                >
-                  Explore
-                </button>
-                <ul className="tags">
-                  {Object.keys(project.tags).map((tagKey) => {
-                    return <li key={tagKey}>{project.tags[tagKey]}</li>;
-                  })}
-                </ul>
+                <div className="project__content">
+                  <h3>
+                    <a onClick={() => openProjectModalAndPopulate(project)}>
+                      {title}
+                    </a>
+                  </h3>
+                  <button
+                    key={id}
+                    className="project-btn"
+                    onClick={() => openProjectModalAndPopulate(project)}
+                  >
+                    Explore
+                  </button>
+                  <ul className="tags">
+                    {Object.keys(project.tags).map((tagKey) => {
+                      return <li key={tagKey}>{project.tags[tagKey]}</li>;
+                    })}
+                  </ul>
+                </div>
               </div>
             );
           })}

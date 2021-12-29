@@ -16,30 +16,28 @@ import BlogArticle from "./Components/Blog/BlogArticle";
 function App() {
   return (
     <BrowserRouter>
-      <div id="page-top">
-        <Switch>
-          <Route exact path="/">
-            <div className="container-fluid p-0">
-              <Navbar />
-              <About />
-              <Education />
-              <Skills />
-              <ProjectModalProvider>
-                <ProjectsList />
-              </ProjectModalProvider>
-              <Blog />
-              <Contact />
-            </div>
-          </Route>
-          <Route exact path="/blog">
-            <div className="container-fluid p-0">
-              <NavbarBlog />
-              <BlogHome />
-            </div>
-          </Route>
-          <Route path="/blog/:url" children={<BlogArticle />}></Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Navbar />
+          <main className="container-fluid p-0">
+            <About />
+            <Education />
+            <Skills />
+            <ProjectModalProvider>
+              <ProjectsList />
+            </ProjectModalProvider>
+            <Blog />
+            <Contact />
+          </main>
+        </Route>
+        <Route exact path="/blog">
+          <div className="container-fluid p-0">
+            <NavbarBlog />
+            <BlogHome />
+          </div>
+        </Route>
+        <Route path="/blog/:url" children={<BlogArticle />}></Route>
+      </Switch>
     </BrowserRouter>
   );
 }

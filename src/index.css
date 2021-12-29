@@ -20,7 +20,7 @@
   --breakpoint-xl: 1200px;
   --transition: all 0.1s linear;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -73,6 +73,7 @@ img {
     justify-items: center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 2rem;
+    max-width: 1400px;
   }
 }
 
@@ -84,19 +85,22 @@ img {
   }
 }
 
+.project__content {
+  padding: 0.25rem;
+}
+
 .project-container div {
   display: grid;
   border-radius: var(--radius);
   background: #121416;
   max-width: 35em;
-  margin: 0rem auto 1rem auto;
 }
 .project-container img {
+  border-radius: var(--radius) var(--radius) 0 0;
   width: 100%;
-  aspect-ratio: 1.6 / 1;
+  aspect-ratio: 1.5 / 1;
   object-fit: cover;
 }
-
 .project-container div h3 {
   font-size: 1.5rem;
   color: #fff;
@@ -109,20 +113,20 @@ img {
   border-color: transparent;
   color: #fff;
   text-decoration: none;
+  text-align: center;
   font-size: 1rem;
   text-transform: capitalize;
-  text-align: center;
-  margin: 0rem 0.5rem 0rem 0.5rem;
+  margin: 0.5rem;
   letter-spacing: 1px;
   cursor: pointer;
+  padding: 0.55rem;
   transition: var(--transition);
   border-radius: var(--radius);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .project-btn:hover {
-  color: #fff;
-  background: #2b627c;
+  color: #226677;
 }
 
 .tags {
@@ -265,8 +269,28 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.hero h1 {
+.hero .hero--title {
   color: #fff;
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  max-width: 900px;
+}
+.hero .hero--description {
+  max-width: 900px;
+}
+.hero .normalText {
+  font-size: 1em;
+  text-transform: none;
+  display: inline;
+  color: #fff;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 *,
@@ -705,6 +729,7 @@ a > code {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
+  margin-top: 1rem;
   list-style: none;
 }
 
@@ -2265,12 +2290,16 @@ section.resume-section .resume-section-content {
   }
 }
 
+.btn-tabs-container {
+  margin-bottom: 1rem;
+}
+
 .filter-btn {
   background: transparent;
   border-color: transparent;
   font-size: 1rem;
   text-transform: capitalize;
-  margin: 0rem 0.5rem 1rem 0.5rem;
+  margin: 0rem 1rem 1rem 0rem;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   letter-spacing: 1px;
   color: var(--font-text-color);
@@ -2396,6 +2425,10 @@ Modal
   font-size: 2rem;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.modal-container .carousel .slide img {
+  border-radius: var(--radius);
 }
 
 @media (min-width: 720px) {

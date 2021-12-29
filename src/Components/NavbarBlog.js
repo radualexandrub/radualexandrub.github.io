@@ -55,6 +55,7 @@ function NavbarBlog() {
 
       <button
         className="navbar-toggler"
+        aria-label="Open the navigation menu"
         type="button"
         onClick={() => toggleNavbarOpen()}
       >

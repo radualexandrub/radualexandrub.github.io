@@ -61,7 +61,7 @@ const ProjectData = [
     category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
     imgAlt: "Android ToDo Journal Quiz App",
-    tags: ["TensorFlow Lite", "Android", "Python"],
+    tags: ["TensorFlow", "Android", "Python"],
     description:
       "Age Classification App using Native Android. The quantized .tflite model was trained and generated using TensorFlow Lite Model Maker. Face databases used: UTKFace combined with Appa-Real.",
     github: "https://github.com/radualexandrub/Android-Age-Classification",
