@@ -33,7 +33,7 @@
 }
 
 [class="dark"] {
-  --primary-color: #f2f2f2;
+  --primary: #f2f2f2;
   --font-header-color: #f0f0fc;
   --font-text-color: #c8c8d6;
   --bg-color: #0d0d0e;
@@ -82,6 +82,9 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  .project-container .project + .project {
+    margin-top: 2rem;
   }
 }
 
@@ -150,6 +153,14 @@ img {
 /* Blog Article page */
 
 /* Image within a blog article*/
+.resume-section-content-blog-article h1 {
+  font-size: 4rem;
+}
+.resume-section-content-blog-article h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
   center p img {
     max-width: 100%;
@@ -362,7 +373,7 @@ strong {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary);
   text-decoration: none;
   background-color: transparent;
 }
@@ -2409,7 +2420,7 @@ Modal
 .modal-container {
   background: var(--modal-bg);
   border-radius: var(--radius);
-  margin: 20px 15px 10px 15px;
+  margin: 20px 18px 10px 18px;
   text-align: center;
   display: grid;
   place-items: center;
@@ -2431,9 +2442,16 @@ Modal
   border-radius: var(--radius);
 }
 
+.modal-container-image-desc .modal--content {
+  padding: 0.5rem;
+}
+
 @media (min-width: 720px) {
   .modal-container-image-desc {
     display: flex;
+  }
+  .modal-container-image-desc .modal--content {
+    min-width: 40%;
   }
 }
 
@@ -2456,7 +2474,6 @@ Modal
 .modal-container .modal--description {
   color: var(--font-text-color);
   margin: 0.5rem;
-  min-width: 23rem;
   text-align: justify;
 }
 
@@ -2475,3 +2492,79 @@ Modal
   cursor: pointer;
 }
 /* *** end of PROJECTS MODAL *** */
+
+/*******************/
+/* Contact Section */
+.sectionContact .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sectionContact .form__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+.sectionContact .form__item label {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.sectionContact .form__item input,
+.sectionContact .form__item textarea {
+  outline: none;
+  padding: 0.75rem;
+  border: 2px solid rgba(20, 53, 88, 10%);
+  border-radius: 0.5rem;
+  transition: border-color 200ms ease-in-out, background-color 200ms ease-in;
+}
+.sectionContact .form__item input:hover,
+.sectionContact .form__item textarea:hover {
+  border-color: rgba(20, 53, 88, 20%);
+}
+.sectionContact .form__item input:focus,
+.sectionContact .form__item textarea:focus {
+  border-color: var(--primary);
+}
+.sectionContact .form__btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  background: #495057;
+  border: 1px solid #495057;
+  color: #fff;
+  padding: 0.8em 1.6em;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 300ms ease-in-out;
+}
+.sectionContact .form__btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  opacity: 0;
+  box-shadow: 2px 2px 16px 0 #aec6d1;
+  transition: opacity 300ms ease;
+}
+.sectionContact .form__btn:hover {
+  background-color: #2b627c;
+}
+.sectionContact .form__btn:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+  }
+  #contact .sectionContact {
+    margin-top: 3rem;
+  }
+}

@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/Portfolio/About";
 import Education from "./Components/Portfolio/Education";
 import Skills from "./Components/Portfolio/Skills";
-import ProjectsList from "./Components/Portfolio/Projects/ProjectsList";
+import ProjectsList from "./Components/Portfolio/Projects";
 import { ProjectModalProvider } from "./Components/Portfolio/Projects/ProjectModalContext";
 import Blog from "./Components/Portfolio/Blog";
 import Contact from "./Components/Portfolio/Contact";

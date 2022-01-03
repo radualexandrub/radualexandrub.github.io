@@ -1,3 +1,4 @@
+import { ContactForm } from "./ContactFormsSpree";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -73,6 +74,9 @@ export default function Contact() {
             <FontAwesomeIcon icon={faFlickr} />
           </a>
         </div>
+      </div>
+      <div className="resume-section-content sectionContact">
+        <ContactForm />
       </div>
     </section>
   );

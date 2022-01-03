@@ -9,6 +9,18 @@ export default function Skills() {
           <h2 className="mb-4">Skills</h2>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
+              <i className="devicon-javascript-plain" title="JavaScript"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="devicon-react-plain" title="React"></i>
+            </li>
+            <li className="list-inline-item">
+              <i class="devicon-php-plain" title="PHP"></i>
+            </li>
+            <li className="list-inline-item">
+              <i class="devicon-wordpress-plain" title="WordPress"></i>
+            </li>
+            <li className="list-inline-item">
               <i className="devicon-python-plain" title="Python"></i>
             </li>
             <li className="list-inline-item">
@@ -18,16 +30,7 @@ export default function Skills() {
               ></i>
             </li>
             <li className="list-inline-item">
-              <i className="devicon-javascript-plain" title="JavaScript"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-react-plain" title="React"></i>
-            </li>
-            <li className="list-inline-item">
               <i className="devicon-mysql-plain" title="MySQL"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-android-plain" title="Android SDK"></i>
             </li>
             <li className="list-inline-item">
               <i className="devicon-html5-plain" title="HTML5"></i>
@@ -36,7 +39,7 @@ export default function Skills() {
               <i className="devicon-css3-plain" title="CSS3"></i>
             </li>
             <li className="list-inline-item">
-              <i className="devicon-git-plain" title="Git"></i>
+              <i className="devicon-android-plain" title="Android SDK"></i>
             </li>
           </ul>
           <div className="subheading mb-2">Languages</div>
@@ -45,8 +48,7 @@ export default function Skills() {
               <span className="fa-li">
                 <FontAwesomeIcon icon={faTerminal} />
               </span>
-              Programming:{" "}
-              <strong>Python, JavaScript, SQL, Java (Android SDK)</strong>
+              Programming: <strong>JavaScript, PHP, Python, SQL, Java</strong>
             </li>
             <li>
               <span className="fa-li">
@@ -62,13 +64,13 @@ export default function Skills() {
           <div className="subheading mb-2">Frameworks and Tools</div>
           <ul>
             <li>
-              <strong>React</strong> (Front-end)
+              <strong>React, Next.js</strong> (Front-end)
             </li>
             <li>
-              <strong>Django</strong> (Back-end)
+              <strong>WordPress, Django</strong> (Back-end)
             </li>
             <li>
-              <strong>Keras</strong>
+              <strong>Figma, Adobe Photoshop, Lightroom</strong> (Design)
             </li>
             <li>
               <strong>Git & GitHub</strong>
@@ -76,9 +78,6 @@ export default function Skills() {
             <li>
               <strong>Sublime Text, VS Code</strong> (Macros,
               Packages/Extensions, Code Formating)
-            </li>
-            <li>
-              <strong>Adobe Lightroom, Photoshop</strong>
             </li>
             <li>
               <strong>Google Suite, Microsoft Office Suite</strong>

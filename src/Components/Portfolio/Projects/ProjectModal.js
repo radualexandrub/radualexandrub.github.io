@@ -56,38 +56,39 @@ export default function ProjectModal() {
               </Carousel>
             ) : null}
           </LazyLoad>
-          <div>
+
+          <div className="modal--content">
             <button className="close-modal-btn" onClick={closeProjectModal}>
               close
             </button>
+
             <div className="modal--title">{projectModalInformation.title}</div>
+
+            <p className="modal--description">
+              {projectModalInformation.description}
+            </p>
             <div>
-              <p className="modal--description">
-                {projectModalInformation.description}
-              </p>
-              <div>
-                {projectModalInformation.livelink ? (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    href={projectModalInformation.livelink || "#"}
-                    title={projectModalInformation.title}
-                  >
-                    <FontAwesomeIcon icon={faDesktop} /> View Live
-                  </a>
-                ) : null}
-                {projectModalInformation.github ? (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    href={projectModalInformation.github}
-                  >
-                    <FontAwesomeIcon icon={faGithub} /> GitHub
-                  </a>
-                ) : null}
-              </div>
+              {projectModalInformation.livelink ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                  href={projectModalInformation.livelink || "#"}
+                  title={projectModalInformation.title}
+                >
+                  <FontAwesomeIcon icon={faDesktop} /> View Live
+                </a>
+              ) : null}
+              {projectModalInformation.github ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                  href={projectModalInformation.github}
+                >
+                  <FontAwesomeIcon icon={faGithub} /> GitHub
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

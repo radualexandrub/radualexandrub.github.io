@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import projectsList from "./ProjectData";
+import projectsData from "./ProjectData";
 import Categories from "./ProjectCategories";
 import ProjectModal from "./ProjectModal";
 import { useModalContext } from "./ProjectModalContext";
@@ -7,11 +7,11 @@ import imgGitHub from "../../../img/imgGitHub.webp";
 
 const allCategories = [
   "All",
-  ...new Set(projectsList.map((item) => item.category)),
+  ...new Set(projectsData.map((item) => item.category)),
 ];
 
 const ProjectsList = () => {
-  const [projects, setProjects] = useState(projectsList);
+  const [projects, setProjects] = useState(projectsData);
   const [categories] = useState(allCategories);
   const [activeCategory, setActiveCategory] = useState("All");
   const [isAllCategoriesDisplayed, setIsAllCategoriesDisplayed] =
@@ -19,12 +19,12 @@ const ProjectsList = () => {
 
   const filterItems = (category) => {
     if (category === "All") {
-      setProjects(projectsList);
+      setProjects(projectsData);
       setIsAllCategoriesDisplayed(true);
       setActiveCategory(category);
       return;
     }
-    const newProjectsList = projectsList.filter(
+    const newProjectsList = projectsData.filter(
       (item) => item.category === category
     );
     setProjects(newProjectsList);
@@ -43,7 +43,7 @@ const ProjectsList = () => {
   return (
     <section className="resume-section" id="projects">
       <div className="resume-section-content">
-        <h2 className="mb-4">Projects</h2>
+        <h2 className="mb-4">Side Projects</h2>
 
         <ProjectModal />
 
@@ -84,7 +84,7 @@ const ProjectsList = () => {
           })}
 
           {isAllCategoriesDisplayed ? (
-            <div>
+            <div className="project">
               <img src={imgGitHub} alt="Radu Alexandru Bulai GitHub" />
               <h3>
                 <a
