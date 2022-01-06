@@ -45,12 +45,12 @@ export const ContactForm = () => {
     <form className="form" onSubmit={handleSubmit}>
       <div className="form__item">
         <label htmlFor="fullname">Full Name</label>
-        <input id="fullname" type="text" name="fullname" />
+        <input id="fullname" type="text" name="fullname" required />
       </div>
 
       <div className="form__item">
         <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" />
+        <input id="email" type="email" name="email" required />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
 
@@ -61,6 +61,7 @@ export const ContactForm = () => {
           name="message"
           placeholder="Your message"
           rows="5"
+          required
         />
         <ValidationError
           prefix="Message"

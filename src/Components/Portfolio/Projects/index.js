@@ -61,7 +61,7 @@ const ProjectsList = () => {
               <div className="project" key={id}>
                 <img src={[img[0]]} alt={imgAlt} />
                 <div className="project__content">
-                  <h3>
+                  <h3 className="project__title">
                     <a onClick={() => openProjectModalAndPopulate(project)}>
                       {title}
                     </a>
@@ -86,7 +86,7 @@ const ProjectsList = () => {
           {isAllCategoriesDisplayed ? (
             <div className="project">
               <img src={imgGitHub} alt="Radu Alexandru Bulai GitHub" />
-              <h3>
+              <h3 className="project__title">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"

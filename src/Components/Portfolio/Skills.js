@@ -15,10 +15,10 @@ export default function Skills() {
               <i className="devicon-react-plain" title="React"></i>
             </li>
             <li className="list-inline-item">
-              <i class="devicon-php-plain" title="PHP"></i>
+              <i className="devicon-php-plain" title="PHP"></i>
             </li>
             <li className="list-inline-item">
-              <i class="devicon-wordpress-plain" title="WordPress"></i>
+              <i className="devicon-wordpress-plain" title="WordPress"></i>
             </li>
             <li className="list-inline-item">
               <i className="devicon-python-plain" title="Python"></i>
@@ -64,13 +64,13 @@ export default function Skills() {
           <div className="subheading mb-2">Frameworks and Tools</div>
           <ul>
             <li>
-              <strong>React, Next.js</strong> (Front-end)
+              Front-end: <strong>React, Next.js</strong>
             </li>
             <li>
-              <strong>WordPress, Django</strong> (Back-end)
+              Back-end: <strong>WordPress, Django</strong>
             </li>
             <li>
-              <strong>Figma, Adobe Photoshop, Lightroom</strong> (Design)
+              Design: <strong>Figma, Adobe Photoshop, Lightroom</strong>
             </li>
             <li>
               <strong>Git & GitHub</strong>
@@ -90,7 +90,8 @@ export default function Skills() {
               <span className="fa-li">
                 <FontAwesomeIcon icon={faCheck} />
               </span>
-              Fast learner of new things
+              Fast learner, continuous drive for self-improvement and
+              self-motivation
             </li>
             <li>
               <span className="fa-li">
@@ -102,19 +103,19 @@ export default function Skills() {
               <span className="fa-li">
                 <FontAwesomeIcon icon={faCheck} />
               </span>
-              Good leadership skills from being the head of the students groups
-              I belonged to
+              Hard working with a strong motivation to bring on the best
+              possible results
             </li>
             <li>
               <span className="fa-li">
                 <FontAwesomeIcon icon={faCheck} />
               </span>
-              Continuous drive for self-improvement and self-motivation
+              Problem-solver and decision making while taking full
+              responsability of my actions
             </li>
           </ul>
         </div>
       </section>
-      <hr className="m-0" />
     </>
   );
 }

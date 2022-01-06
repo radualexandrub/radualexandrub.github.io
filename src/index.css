@@ -3,6 +3,7 @@
 :root {
   --font-header-color: #3e4246;
   --font-text-color: #313538;
+  --heading-color: #3a83a6;
   --primary: #2b627c;
   --secondary: #6c757d;
   --success: #28a745;
@@ -33,11 +34,9 @@
 }
 
 [class="dark"] {
-  --primary: #f2f2f2;
   --font-header-color: #f0f0fc;
   --font-text-color: #c8c8d6;
   --bg-color: #0d0d0e;
-  --heading-color: #3a83a6;
   --modal-bg: #202325;
 }
 
@@ -104,10 +103,12 @@ img {
   aspect-ratio: 1.5 / 1;
   object-fit: cover;
 }
-.project-container div h3 {
+.project-container .project__title {
   font-size: 1.5rem;
-  color: #fff;
   margin: 10px 10px 0px 10px;
+}
+.project-container .project__title a {
+  color: #fff;
 }
 
 .project-btn {
@@ -265,7 +266,6 @@ img {
 }
 
 /* HERO Image Background */
-
 .hero {
   /* Sizing */
   width: 100vw;
@@ -2338,7 +2338,7 @@ section.resume-section .resume-section-content {
   border-radius: var(--radius);
 }
 
-/*DARK MODE toggle button*/
+/* DARK MODE toggle button */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -2392,7 +2392,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/*end of DARK MODE toggle button*/
+/* end of DARK MODE toggle button */
 
 /*
 =============== 
@@ -2420,6 +2420,7 @@ Modal
 .modal-container {
   background: var(--modal-bg);
   border-radius: var(--radius);
+  max-width: 1550px;
   margin: 20px 18px 10px 18px;
   text-align: center;
   display: grid;
@@ -2567,4 +2568,24 @@ Modal
   #contact .sectionContact {
     margin-top: 3rem;
   }
+}
+
+/**********************************/
+/* Experience and Skills Sections */
+.websites-carousel {
+  margin-top: 1rem;
+}
+.website-container {
+  text-align: center;
+  background-color: #fdfdfd;
+  border-radius: 1rem;
+  padding: 0.5rem 0.25rem 0rem 0.25rem;
+}
+.website-container img {
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+}
+.website-container a {
+  color: var(--font-text-color);
+  font-weight: 600;
 }

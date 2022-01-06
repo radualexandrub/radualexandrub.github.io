@@ -1,7 +1,9 @@
 import React from "react";
+
 import Navbar from "./Components/Navbar";
 import About from "./Components/Portfolio/About";
 import Education from "./Components/Portfolio/Education";
+import Experience from "./Components/Portfolio/Experience";
 import Skills from "./Components/Portfolio/Skills";
 import ProjectsList from "./Components/Portfolio/Projects";
 import { ProjectModalProvider } from "./Components/Portfolio/Projects/ProjectModalContext";
@@ -21,12 +23,18 @@ function App() {
           <Navbar />
           <main className="container-fluid p-0">
             <About />
-            <Education />
             <Skills />
+            <hr className="m-0" />
+            <Experience />
+            <hr className="m-0" />
+            <Education />
+            <hr className="m-0" />
             <ProjectModalProvider>
               <ProjectsList />
             </ProjectModalProvider>
+            <hr className="m-0" />
             <Blog />
+            <hr className="m-0" />
             <Contact />
           </main>
         </Route>

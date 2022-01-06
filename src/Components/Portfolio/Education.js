@@ -92,7 +92,6 @@ function Education() {
           </div>
         </div>
       </section>
-      <hr className="m-0" />
     </>
   );
 }

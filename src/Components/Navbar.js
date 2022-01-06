@@ -83,24 +83,36 @@ function Navbar() {
             <LinkScroll
               activeClass="active"
               className="nav-link"
-              to="education"
-              spy={true}
-              smooth={true}
-              duration={200}
-            >
-              Education
-            </LinkScroll>
-          </li>
-          <li className="nav-item">
-            <LinkScroll
-              activeClass="active"
-              className="nav-link"
               to="skills"
               spy={true}
               smooth={true}
               duration={200}
             >
               Skills
+            </LinkScroll>
+          </li>
+          <li className="nav-item">
+            <LinkScroll
+              activeClass="active"
+              className="nav-link"
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Experience
+            </LinkScroll>
+          </li>
+          <li className="nav-item">
+            <LinkScroll
+              activeClass="active"
+              className="nav-link"
+              to="education"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Education
             </LinkScroll>
           </li>
           <li className="nav-item">
