@@ -3,7 +3,7 @@
 :root {
   --font-header-color: #3e4246;
   --font-text-color: #313538;
-  --heading-color: #3a83a6;
+  --heading-color: #2b627c;
   --primary: #2b627c;
   --secondary: #6c757d;
   --success: #28a745;
@@ -38,6 +38,7 @@
   --font-text-color: #c8c8d6;
   --bg-color: #0d0d0e;
   --modal-bg: #202325;
+  --heading-color: #57acd3;
 }
 
 ::selection {
@@ -141,7 +142,7 @@ img {
   padding: 0;
 }
 .tags li {
-  background: #267;
+  background: var(--primary);
   border-radius: 3px 0 0 3px;
   color: #fff;
   height: 26px;
@@ -225,6 +226,7 @@ img {
 
 .blog-card img {
   border-radius: var(--radius);
+  object-fit: cover;
 }
 
 .blog-card > div {
@@ -245,6 +247,10 @@ img {
   line-height: 1.2;
 }
 
+.blog-card .blog-card--link {
+  color: #fff;
+}
+
 .blog-card p {
   font-size: 1rem;
   color: #fff;
@@ -256,7 +262,7 @@ img {
   list-style: none;
 }
 .blog-card .tags li {
-  background: #267;
+  background: var(--primary);
   border-radius: 3px 0 0 3px;
   color: #fff;
   height: 26px;
@@ -984,7 +990,7 @@ a > code {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #2b627c;
+  color: var(--primary);
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -2056,7 +2062,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-  color: #2b627c !important;
+  color: var(--primary) !important;
 }
 
 a.text-primary:focus,
@@ -2526,7 +2532,7 @@ Modal
 }
 .sectionContact .form__item input:focus,
 .sectionContact .form__item textarea:focus {
-  border-color: var(--primary);
+  border-color: var(--heading-color);
 }
 .sectionContact .form__btn {
   display: flex;
@@ -2584,6 +2590,10 @@ Modal
 .website-container img {
   margin-bottom: 1rem;
   filter: grayscale(100%);
+  transition: filter 200ms ease-in;
+}
+.website-container img:hover {
+  filter: grayscale(0%);
 }
 .website-container a {
   color: var(--font-text-color);

@@ -19,11 +19,16 @@ export default function Blog() {
               <div className="blog-card--title">View all my Blog Articles</div>
             </Link>
             <p>
-              See all my <Link to={`/blog`}>blog articles here</Link> or on{" "}
+              See all my{" "}
+              <Link className="blog-card--link" to={`/blog`}>
+                blog articles here
+              </Link>{" "}
+              or on{" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://dev.to/radualexandrub"
+                className="blog-card--link"
               >
                 Dev.to!
               </a>
