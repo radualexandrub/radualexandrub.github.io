@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import ImgMailSentSuccess from "../../img/Illustrations/undraw_mail_sent.svg";
-import ImgMailSentError from "../../img/Illustrations/undraw_mail_error.svg";
+import ImgMailSentSuccess from "../../img/Illustrations/undraw_mail_sent.png";
+import ImgMailSentError from "../../img/Illustrations/undraw_mail_error.png";
 
 export const ContactForm = () => {
   const [state, handleSubmit] = useForm("myyoyawd");
@@ -44,7 +44,7 @@ export const ContactForm = () => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="form__item">
-        <label htmlFor="fullname">Full Name</label>
+        <label htmlFor="fullname">Name</label>
         <input id="fullname" type="text" name="fullname" required />
       </div>
 

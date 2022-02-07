@@ -302,6 +302,7 @@ img {
 }
 .hero .normalText {
   font-size: 1em;
+  font-weight: 400;
   text-transform: none;
   display: inline;
   color: #fff;
@@ -2590,10 +2591,12 @@ Modal
 .website-container img {
   margin-bottom: 1rem;
   filter: grayscale(100%);
-  transition: filter 200ms ease-in;
+  opacity: 85%;
+  transition: filter 200ms ease-in, opacity 200ms;
 }
 .website-container img:hover {
   filter: grayscale(0%);
+  opacity: 100%;
 }
 .website-container a {
   color: var(--font-text-color);

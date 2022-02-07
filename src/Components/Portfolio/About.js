@@ -12,10 +12,12 @@ function About() {
           <br />
           <div className="lead mb-4 hero--description">
             Hi, I’m a{" "}
-            <h1 className="normalText">Junior Web Developer and Designer</h1>{" "}
-            based on Bucharest, Romania. For more than a year, I developed
-            beautiful and responsive websites that satisfied all the needs of
-            clients in order to launch or improve their current businesses.
+            <h1 className="normalText">
+              Junior Web Developer and Designer based in Bucharest, Romania
+            </h1>
+            . For more than a year, I developed beautiful and responsive
+            websites that satisfied all the needs of clients in order to launch
+            or improve their current businesses.
           </div>
           <div className="subheading mb-4">
             <LinkScroll

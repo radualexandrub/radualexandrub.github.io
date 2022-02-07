@@ -35,7 +35,12 @@ export default function DarkModeToggle() {
 
   return (
     <div className="theme-switch-wrapper nav-item">
-      <label className="theme-switch" htmlFor="checkbox">
+      <label
+        className="theme-switch"
+        htmlFor="checkbox"
+        title="Toggle between light and dark mode"
+        aria-label="Toggle between light and dark mode"
+      >
         <input
           type="checkbox"
           checked={checked}
