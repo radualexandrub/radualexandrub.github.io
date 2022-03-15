@@ -2582,6 +2582,9 @@ Modal
 .websites-carousel {
   margin-top: 1rem;
 }
+.websites-carousel .swiper-wrapper {
+  align-items: flex-end;
+}
 .website-container {
   text-align: center;
   background-color: #fdfdfd;

@@ -17,6 +17,7 @@ import LogoWixy from "../../img/Logos/LogoWixy.png";
 import LogoPalmex from "../../img/Logos/LogoPalmex.png";
 import LogoSancad from "../../img/Logos/LogoSancad.png";
 import LogoChattitude from "../../img/Logos/LogoChattitude.png";
+import LogoBioProject from "../../img/Logos/LogoBioProjectBWS.png";
 
 function Experience() {
   return (
@@ -62,7 +63,7 @@ function Experience() {
               </ul>
             </div>
             <div className="flex-shrink-0">
-              <span className="text-primary">Feb 2021 - Present</span>
+              <span className="text-primary">Feb 2021 - Feb 2022</span>
               <br />
               <a
                 target="_blank"
@@ -74,7 +75,7 @@ function Experience() {
             </div>
           </div>
           <div className="subheading mb-2">
-            Websites I've worked on from start until deployment &amp;
+            Websites I've fully worked on from start until deployment &amp;
             maintenance:
           </div>
           <div className="websites-carousel">
@@ -141,6 +142,18 @@ function Experience() {
                     title="Weddo Agency - Wedding Planner"
                   >
                     <img src={LogoWeddo} alt="Weddo Agency" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="website-container">
+                  <a
+                    href="https://bioprojectbws.ro/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    title="BioProjectBWS - Environmental Protection Services"
+                  >
+                    <img src={LogoBioProject} alt="BioProjectBWS" />
                   </a>
                 </div>
               </SwiperSlide>

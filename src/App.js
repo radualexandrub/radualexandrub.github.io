@@ -9,11 +9,14 @@ import ProjectsList from "./Components/Portfolio/Projects";
 import { ProjectModalProvider } from "./Components/Portfolio/Projects/ProjectModalContext";
 import Blog from "./Components/Portfolio/Blog";
 import Contact from "./Components/Portfolio/Contact";
+import StudyNotes from "./Components/Portfolio/StudyNotes";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import BlogHome from "./Components/Blog/BlogHome";
 import NavbarBlog from "./Components/NavbarBlog";
 import BlogArticle from "./Components/Blog/BlogArticle";
+
+import CookieNoticeAlert from "./Components/CookieNotice";
 
 // Add Structured JSON-LD Schema/Micro-data for SEO
 import { Helmet } from "react-helmet";
@@ -43,7 +46,7 @@ function App() {
         `}
         </script>
       </Helmet>
-
+      <CookieNoticeAlert />
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -61,6 +64,8 @@ function App() {
               </ProjectModalProvider>
               <hr className="m-0" />
               <Blog />
+              <hr className="m-0" />
+              <StudyNotes></StudyNotes>
               <hr className="m-0" />
               <Contact />
             </main>
