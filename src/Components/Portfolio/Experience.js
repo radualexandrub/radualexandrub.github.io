@@ -9,6 +9,7 @@ import "swiper/swiper.min.css";
 // Import Clients Logos Images
 import LogoSMSO from "../../img/Logos/LogoSMSO.png";
 import LogoValprest from "../../img/Logos/LogoValprest.png";
+import LogoArcRom from "../../img/Logos/LogoArcRom2.png";
 import LogoDBSolar from "../../img/Logos/LogoDBSolar.png";
 import LogoGoTour from "../../img/Logos/LogoGoTour.png";
 import LogoWeddo from "../../img/Logos/LogoWeddoAgency.png";
@@ -118,6 +119,18 @@ function Experience() {
                     title="Valprest Parchet - Flooring solutions"
                   >
                     <img src={LogoValprest} alt="Valprest Parchet" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="website-container">
+                  <a
+                    href="https://www.arc-rom.ro/"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    title="Arc-Rom Trading - Machinery and equipment for heavy industry"
+                  >
+                    <img src={LogoArcRom} alt="Arc-Rom Trading S.R.L." />
                   </a>
                 </div>
               </SwiperSlide>
