@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ca89e058.css",
-    "main.js": "/static/js/main.85d8807d.js",
+    "main.js": "/static/js/main.b288b0c3.js",
     "static/js/377.2dcb55ea.chunk.js": "/static/js/377.2dcb55ea.chunk.js",
     "static/media/VideoDemo.gif": "/static/media/VideoDemo.102d84c9a8ddf49fa4c7.gif",
     "static/media/Project_AndroidAge02.webp": "/static/media/Project_AndroidAge02.96cd24e2fac96a179b42.webp",
@@ -36,11 +36,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c42e81283aad0e18956c7d611b867e9c.svg",
     "static/media/angular.svg": "/static/media/angular.186bad39f01ae525673e8f538e18f009.svg",
     "main.ca89e058.css.map": "/static/css/main.ca89e058.css.map",
-    "main.85d8807d.js.map": "/static/js/main.85d8807d.js.map",
+    "main.b288b0c3.js.map": "/static/js/main.b288b0c3.js.map",
     "377.2dcb55ea.chunk.js.map": "/static/js/377.2dcb55ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca89e058.css",
-    "static/js/main.85d8807d.js"
+    "static/js/main.b288b0c3.js"
   ]
 }
