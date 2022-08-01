@@ -29,6 +29,48 @@ function Experience() {
 
           <div className="d-flex flex-column flex-md-row justify-content-between">
             <div className="flex-grow-1">
+              <h3 className="mb-0">Software Developer with Java</h3>
+              <div className="subheading mb-2">Luxoft</div>
+              <ul>
+                <li>
+                  Offer development and support on Avaya web applications with
+                  Salesforce integration that were designed for call centers
+                </li>
+                <li>
+                  Work on log analysis, bug fixing, maintenance, and product
+                  enhancement
+                </li>
+                <li>
+                  Deliver hotfixes and technical support to clients while using
+                  descriptive scenarios, explained configurations, and
+                  easy-to-follow visual representations for workflow and
+                  features
+                </li>
+                <li>
+                  Provide software and release documentation, as well as
+                  internal step-by-step tutorials for the team
+                </li>
+                <li>
+                  Work with: Java, Spring, Angular, Docker, Salesforce,
+                  JIRA/Kanban Workflow
+                </li>
+              </ul>
+            </div>
+            <div className="flex-shrink-0">
+              <span className="text-primary">Feb 2022 - Present</span>
+              <br />
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://www.luxoft.com/"
+              >
+                Website
+              </a>
+            </div>
+          </div>
+          <br />
+          <div className="d-flex flex-column flex-md-row justify-content-between">
+            <div className="flex-grow-1">
               <h3 className="mb-0">Junior Web Developer</h3>
               <div className="subheading mb-2">
                 SEO Cupcake - Marketing and Web Development Agency

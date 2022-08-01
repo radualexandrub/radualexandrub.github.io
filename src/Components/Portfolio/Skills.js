@@ -9,10 +9,16 @@ export default function Skills() {
           <h2 className="mb-4">Skills</h2>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
+              <i className="devicon-java-plain" title="Java"></i>
+            </li>
+            <li className="list-inline-item">
               <i className="devicon-javascript-plain" title="JavaScript"></i>
             </li>
             <li className="list-inline-item">
               <i className="devicon-react-plain" title="React"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="devicon-angularjs-plain" title="Angular"></i>
             </li>
             <li className="list-inline-item">
               <i className="devicon-php-plain" title="PHP"></i>
@@ -29,18 +35,6 @@ export default function Skills() {
                 title="Django Web Framework"
               ></i>
             </li>
-            <li className="list-inline-item">
-              <i className="devicon-mysql-plain" title="MySQL"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-html5-plain" title="HTML5"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-css3-plain" title="CSS3"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicon-android-plain" title="Android SDK"></i>
-            </li>
           </ul>
           <div className="subheading mb-2">Languages</div>
           <ul className="fa-ul">
@@ -48,7 +42,8 @@ export default function Skills() {
               <span className="fa-li">
                 <FontAwesomeIcon icon={faTerminal} />
               </span>
-              Programming: <strong>JavaScript, PHP, Python, SQL, Java</strong>
+              Programming:{" "}
+              <strong>Java, JavaScript/TypeScript, Python, PHP</strong>
             </li>
             <li>
               <span className="fa-li">
@@ -64,7 +59,7 @@ export default function Skills() {
           <div className="subheading mb-2">Frameworks and Tools</div>
           <ul>
             <li>
-              Front-end: <strong>React, Next.js</strong>
+              Front-end: <strong>React, Next.js, Angular</strong>
             </li>
             <li>
               Back-end: <strong>WordPress, Django</strong>
@@ -76,7 +71,7 @@ export default function Skills() {
               <strong>Git & GitHub</strong>
             </li>
             <li>
-              <strong>Sublime Text, VS Code</strong> (Macros,
+              <strong>IntelliJ IDEA, Sublime Text, VS Code</strong> (Macros,
               Packages/Extensions, Code Formating)
             </li>
             <li>

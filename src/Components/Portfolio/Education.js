@@ -14,7 +14,7 @@ function Education() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <span className="text-primary">Oct 2020 - Present</span>
+              <span className="text-primary">Oct 2020 - Jul 2022</span>
               <br />
               <a
                 target="_blank"

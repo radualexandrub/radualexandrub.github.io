@@ -11,6 +11,7 @@ import LogoReact from "../../img/Illustrations/react.svg";
 import LogoJS from "../../img/Illustrations/javascript.svg";
 import LogoPHP from "../../img/Illustrations/php.svg";
 import LogoAngular from "../../img/Illustrations/angular.svg";
+import LogoLinux from "../../img/Illustrations/linux.svg";
 
 export default function StudyNotes() {
   return (
@@ -135,6 +136,25 @@ export default function StudyNotes() {
                     style={{ minHeight: "150px" }}
                   />
                   <div className="subheading">Angular</div>
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="website-container"
+                style={{ backgroundColor: "transparent" }}
+              >
+                <a
+                  href="https://github.com/radualexandrub/Study/blob/master/Linux/Top-Linux-Commands.md"
+                  target="_blank"
+                  title="Linux Commands Study Notes"
+                >
+                  <img
+                    src={LogoLinux}
+                    alt="Linux Study Notes"
+                    style={{ minHeight: "150px" }}
+                  />
+                  <div className="subheading">Linux</div>
                 </a>
               </div>
             </SwiperSlide>
