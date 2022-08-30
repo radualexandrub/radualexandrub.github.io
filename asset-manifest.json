@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.ca89e058.css",
-    "main.js": "/static/js/main.b832bd59.js",
+    "main.js": "/static/js/main.a93b9c7c.js",
     "static/js/377.2dcb55ea.chunk.js": "/static/js/377.2dcb55ea.chunk.js",
     "static/media/VideoDemo.gif": "/static/media/VideoDemo.102d84c9a8ddf49fa4c7.gif",
+    "static/media/VanillaJsShoppingApp01.webp": "/static/media/VanillaJsShoppingApp01.2ec5bb89eb63d15c5e23.webp",
+    "static/media/VanillaJsShoppingApp02.webp": "/static/media/VanillaJsShoppingApp02.eac589cbd88fc5c28986.webp",
     "static/media/Project_AndroidAge02.webp": "/static/media/Project_AndroidAge02.96cd24e2fac96a179b42.webp",
     "static/media/hero-bg.webp": "/static/media/hero-bg.1f2f051f2648c630b9b4.webp",
     "static/media/Project_ToDoQuiz.webp": "/static/media/Project_ToDoQuiz.03d7a17f2ca2df25f98c.webp",
@@ -37,11 +39,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c42e81283aad0e18956c7d611b867e9c.svg",
     "static/media/angular.svg": "/static/media/angular.186bad39f01ae525673e8f538e18f009.svg",
     "main.ca89e058.css.map": "/static/css/main.ca89e058.css.map",
-    "main.b832bd59.js.map": "/static/js/main.b832bd59.js.map",
+    "main.a93b9c7c.js.map": "/static/js/main.a93b9c7c.js.map",
     "377.2dcb55ea.chunk.js.map": "/static/js/377.2dcb55ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca89e058.css",
-    "static/js/main.b832bd59.js"
+    "static/js/main.a93b9c7c.js"
   ]
 }
