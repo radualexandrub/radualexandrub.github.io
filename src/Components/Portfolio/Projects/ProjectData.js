@@ -13,6 +13,8 @@ import AndroidToDo03 from "../../../img/Projects/Project_ToDoQuiz3.webp";
 import AndroidAge01 from "../../../img/Projects/Project_AndroidAge01.webp";
 import AndroidAge02 from "../../../img/Projects/Project_AndroidAge02.webp";
 import AndroidAge03 from "../../../img/Projects/Project_AndroidAge03.webp";
+import VanillaJSShopping02 from "../../../img/Projects/VanillaJsShoppingApp02.webp";
+import VanillaJSShopping01 from "../../../img/Projects/VanillaJsShoppingApp01.webp";
 
 const ProjectData = [
   {
@@ -31,6 +33,19 @@ const ProjectData = [
   },
   {
     id: 2,
+    title:
+      "Shopping List Application with prices (CRUD) made with Vanilla JavaScript",
+    category: "Web Apps",
+    img: [VanillaJSShopping02, VanillaJSShopping01],
+    imgAlt: "Shopping List App with Prices",
+    tags: ["JavaScript"],
+    description:
+      "Shopping List App with an extra field for prices. Features include: deleting items with a fancy animation, updating and checking items on your list, searching items by name, displaying extra information on total price of all/checked/unchecked items, as well as Dark Mode! All items will be saved to Browser's Local Storage.",
+    github: "https://github.com/radualexandrub/VanillaJS-ShoppingApp",
+    livelink: "https://radualexandrub.github.io/VanillaJS-ShoppingApp/",
+  },
+  {
+    id: 3,
     title: "Database Management with Multiple Tables and Authentication",
     category: "Android Apps",
     img: [AndroidDB01, AndroidDB02, AndroidDB03],
@@ -43,7 +58,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
     category: "Other",
     img: [AgeClass01, AgeClass02, AgeClass03],
@@ -56,7 +71,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Age Classification Android App",
     category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
@@ -68,7 +83,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android Apps",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],
