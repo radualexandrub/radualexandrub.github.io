@@ -33,7 +33,7 @@ function Experience() {
               <div className="subheading mb-2">Luxoft</div>
               <ul>
                 <li>
-                  Offer development and support on Avaya web applications with
+                  Offer development and support on web applications with
                   Salesforce integration that were designed for call centers
                 </li>
                 <li>
@@ -49,6 +49,14 @@ function Experience() {
                 <li>
                   Provide software and release documentation, as well as
                   internal step-by-step tutorials for the team
+                </li>
+                <li>
+                  Conduct technical interviews to recruit the best possible
+                  candidates for Junior roles
+                </li>
+                <li>
+                  Help newcomers with the ramp-up process (Openness and
+                  commitment to being a buddy)
                 </li>
                 <li>
                   Work with: Java, Spring, Angular, Docker, Salesforce,

@@ -59,10 +59,10 @@ export default function Skills() {
           <div className="subheading mb-2">Frameworks and Tools</div>
           <ul>
             <li>
-              Front-end: <strong>React, Next.js, Angular</strong>
+              Front-end: <strong>Angular, React, Next.js</strong>
             </li>
             <li>
-              Back-end: <strong>WordPress, Django</strong>
+              Back-end: <strong>SpringBoot, Django, WordPress</strong>
             </li>
             <li>
               Design: <strong>Figma, Adobe Photoshop, Lightroom</strong>

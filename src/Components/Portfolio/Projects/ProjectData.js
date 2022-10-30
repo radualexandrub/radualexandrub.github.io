@@ -15,24 +15,12 @@ import AndroidAge02 from "../../../img/Projects/Project_AndroidAge02.webp";
 import AndroidAge03 from "../../../img/Projects/Project_AndroidAge03.webp";
 import VanillaJSShopping02 from "../../../img/Projects/VanillaJsShoppingApp02.webp";
 import VanillaJSShopping01 from "../../../img/Projects/VanillaJsShoppingApp01.webp";
+import UrlPaserAndBuilderApp01 from "../../../img/Projects/UrlParserApp01.webp";
+import UrlPaserAndBuilderApp02 from "../../../img/Projects/UrlParserApp02.webp";
 
 const ProjectData = [
   {
     id: 1,
-    title:
-      "Django Blog with Authentication, Coding-Articles, Likes and Comments",
-    category: "Web Apps",
-    img: [ProjectBlog01, ProjectBlog02, ProjectBlog04],
-    imgAlt: "Django Blog with Users",
-    tags: ["Python", "Django", "Heroku"],
-    description:
-      "Application Main Features:\n- Responsive UI for desktop and mobile using Bootstrap4\n- Registered users can leave likes and comments on each blog article\n- Rich Text-Editor for blog articles and comments (with text formatting, code snippets, and more using CKEditor)\n- Media Files are stored using Google Drive Storage (free alternative to Amazon S3 Bucket)",
-    github:
-      "https://github.com/radualexandrub/CodingTranquillity-DjangoWebBlog",
-    livelink: "https://codingtranquillity.herokuapp.com/",
-  },
-  {
-    id: 2,
     title:
       "Shopping List Application with prices (CRUD) made with Vanilla JavaScript",
     category: "Web Apps",
@@ -45,7 +33,34 @@ const ProjectData = [
     livelink: "https://radualexandrub.github.io/VanillaJS-ShoppingApp/",
   },
   {
+    id: 2,
+    title: "URL Parser and Builder App based on Query Parameters",
+    category: "Web Apps",
+    img: [UrlPaserAndBuilderApp01, UrlPaserAndBuilderApp02],
+    imgAlt: "URL Parser and Builder APP",
+    tags: ["Angular", "TypeScript"],
+    description:
+      "Simple URL Parser and Builder Application based on URL's query parameters. Just enter the desired URL, modify its parameters, and use the newly built URL according to your needs! Features also include Dark mode and Accent Color picker!",
+    github:
+      "https://github.com/radualexandrub/Angular-URL-Parser-and-Builder-App",
+    livelink: "https://radubulai.com/Angular-URL-Parser-and-Builder-App/",
+  },
+  {
     id: 3,
+    title:
+      "Django Blog with Authentication, Coding-Articles, Likes and Comments",
+    category: "Web Apps",
+    img: [ProjectBlog01, ProjectBlog02, ProjectBlog04],
+    imgAlt: "Django Blog with Users",
+    tags: ["Python", "Django"],
+    description:
+      "Application Main Features:\n- Responsive UI for desktop and mobile using Bootstrap4\n- Registered users can leave likes and comments on each blog article\n- Rich Text-Editor for blog articles and comments (with text formatting, code snippets, and more using CKEditor)\n- Media Files are stored using Google Drive Storage (free alternative to Amazon S3 Bucket)",
+    github:
+      "https://github.com/radualexandrub/CodingTranquillity-DjangoWebBlog",
+    livelink: "",
+  },
+  {
+    id: 4,
     title: "Database Management with Multiple Tables and Authentication",
     category: "Android Apps",
     img: [AndroidDB01, AndroidDB02, AndroidDB03],
@@ -58,7 +73,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
     category: "Other",
     img: [AgeClass01, AgeClass02, AgeClass03],
@@ -71,7 +86,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Age Classification Android App",
     category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
@@ -83,7 +98,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android Apps",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],

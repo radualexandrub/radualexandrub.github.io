@@ -6,7 +6,7 @@ import "react-cookienotice/dist/index.css";
 const CookieNoticeAlert = () => (
   <CookieNotice
     acceptButtonLabel="Okay"
-    cookieTextLabel="This site uses cookies to improve your browsing experience, such as Google Fonts and Google Analytics."
+    cookieTextLabel="This site uses cookies to improve your browsing experience, such as Google Analytics."
   />
 );
 
