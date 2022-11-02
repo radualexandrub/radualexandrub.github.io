@@ -26,4 +26,10 @@
     <url>
         <loc>https://radubulai.com/blog/how-to-add-sitemap-xml-to-your-django-blog-and-make-it-work-on-heroku</loc>
     </url>
+    <url>
+        <loc>https://radubulai.com/Angular-URL-Parser-and-Builder-App/</loc>
+    </url>
+    <url>
+        <loc>https://radubulai.com/VanillaJS-ShoppingApp/</loc>
+    </url>
 </urlset>
