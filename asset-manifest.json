@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.ca89e058.css",
-    "main.js": "/static/js/main.f1d57001.js",
+    "main.js": "/static/js/main.66e15c03.js",
     "static/js/377.2dcb55ea.chunk.js": "/static/js/377.2dcb55ea.chunk.js",
     "static/media/VideoDemo.gif": "/static/media/VideoDemo.102d84c9a8ddf49fa4c7.gif",
+    "static/media/EmployeeManagerAngularSpringApp01.webp": "/static/media/EmployeeManagerAngularSpringApp01.9157e8c23673632b29d8.webp",
     "static/media/VanillaJsShoppingApp01.webp": "/static/media/VanillaJsShoppingApp01.2ec5bb89eb63d15c5e23.webp",
     "static/media/UrlParserApp02.webp": "/static/media/UrlParserApp02.2f2862058c5d700eacbb.webp",
     "static/media/VanillaJsShoppingApp02.webp": "/static/media/VanillaJsShoppingApp02.eac589cbd88fc5c28986.webp",
@@ -18,9 +19,11 @@
     "static/media/CodingTranquillity.webp": "/static/media/CodingTranquillity.bb55060d00d62a3cca05.webp",
     "static/media/imgGitHub.webp": "/static/media/imgGitHub.74a362e415eb6f25b770.webp",
     "static/media/Project_Database_MultipleTables2.webp": "/static/media/Project_Database_MultipleTables2.05a6ea44169f18f004e7.webp",
+    "static/media/EmployeeManagerAngularSpringApp02_QuickEdit.webp": "/static/media/EmployeeManagerAngularSpringApp02_QuickEdit.33ffd5bcfab551a12c20.webp",
     "static/media/Project_Database_MultipleTables3.webp": "/static/media/Project_Database_MultipleTables3.3d8f6cdabce7f3762f9f.webp",
     "static/media/Project_Database_MultipleTables1.webp": "/static/media/Project_Database_MultipleTables1.3e26e15012afa3dbe5d8.webp",
     "static/media/Project_AndroidAge01.webp": "/static/media/Project_AndroidAge01.8735f2a2b5ce7b287193.webp",
+    "static/media/EmployeeManagerAngularSpringApp03_EmployeePage.webp": "/static/media/EmployeeManagerAngularSpringApp03_EmployeePage.3be1fb8082465df09b24.webp",
     "static/media/Project_AndroidAge03.webp": "/static/media/Project_AndroidAge03.96472ddeb459db4ab434.webp",
     "static/media/PicDemo1.webp": "/static/media/PicDemo1.213f42d4081e6a86178d.webp",
     "static/media/LogoDBSolar.png": "/static/media/LogoDBSolar.931bbb7e33f2a7bfa6db.png",
@@ -41,11 +44,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c42e81283aad0e18956c7d611b867e9c.svg",
     "static/media/angular.svg": "/static/media/angular.186bad39f01ae525673e8f538e18f009.svg",
     "main.ca89e058.css.map": "/static/css/main.ca89e058.css.map",
-    "main.f1d57001.js.map": "/static/js/main.f1d57001.js.map",
+    "main.66e15c03.js.map": "/static/js/main.66e15c03.js.map",
     "377.2dcb55ea.chunk.js.map": "/static/js/377.2dcb55ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca89e058.css",
-    "static/js/main.f1d57001.js"
+    "static/js/main.66e15c03.js"
   ]
 }
