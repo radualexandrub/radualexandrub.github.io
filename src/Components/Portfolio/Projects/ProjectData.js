@@ -17,8 +17,24 @@ import VanillaJSShopping02 from "../../../img/Projects/VanillaJsShoppingApp02.we
 import VanillaJSShopping01 from "../../../img/Projects/VanillaJsShoppingApp01.webp";
 import UrlPaserAndBuilderApp01 from "../../../img/Projects/UrlParserApp01.webp";
 import UrlPaserAndBuilderApp02 from "../../../img/Projects/UrlParserApp02.webp";
+import EmployeeManagerApp01 from "../../../img/Projects/EmployeeManagerAngularSpringApp01.webp";
+import EmployeeManagerApp02 from "../../../img/Projects/EmployeeManagerAngularSpringApp02_QuickEdit.webp";
+import EmployeeManagerApp03 from "../../../img/Projects/EmployeeManagerAngularSpringApp03_EmployeePage.webp";
 
 const ProjectData = [
+  {
+    id: 0,
+    title: "Employee Manager App with Angular and SpringBoot Rest API",
+    category: "Web Apps",
+    img: [EmployeeManagerApp01, EmployeeManagerApp02, EmployeeManagerApp03],
+    imgAlt: "Angular and Spring Boot API Employee Manager App",
+    tags: ["Angular", "Java", "SpringBoot"],
+    description:
+      "Employee Manager Application that allows users to perform CRUD (Create, Read, Update, Delete) operations through a Single Page Application (SPA) made in Angular (Front-End) that consumes a SpringBoot REST API (Back-End) connected to a MySQL Database.",
+    github:
+      "https://github.com/radualexandrub/SpringBoot-Angular-EmployeeManagerApp",
+    livelink: "",
+  },
   {
     id: 1,
     title:
@@ -26,7 +42,7 @@ const ProjectData = [
     category: "Web Apps",
     img: [VanillaJSShopping02, VanillaJSShopping01],
     imgAlt: "Shopping List App with Prices",
-    tags: ["JavaScript"],
+    tags: ["Vanilla JavaScript"],
     description:
       "Shopping List App with an extra field for prices. Features include: deleting items with a fancy animation, updating and checking items on your list, searching items by name, displaying extra information on total price of all/checked/unchecked items, as well as Dark Mode! All items will be saved to Browser's Local Storage.",
     github: "https://github.com/radualexandrub/VanillaJS-ShoppingApp",
