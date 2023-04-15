@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.ca89e058.css",
-    "main.js": "/static/js/main.66e15c03.js",
+    "main.js": "/static/js/main.b239822f.js",
     "static/js/377.2dcb55ea.chunk.js": "/static/js/377.2dcb55ea.chunk.js",
     "static/media/VideoDemo.gif": "/static/media/VideoDemo.102d84c9a8ddf49fa4c7.gif",
+    "static/media/TasksTimeInvestmentApp02.webp": "/static/media/TasksTimeInvestmentApp02.e21abe33d294d0896523.webp",
+    "static/media/UrlParserApp00.webp": "/static/media/UrlParserApp00.0b9463f1192876f7b926.webp",
+    "static/media/TasksTimeInvestmentApp01.webp": "/static/media/TasksTimeInvestmentApp01.c5570983483e55ba3b8d.webp",
     "static/media/EmployeeManagerAngularSpringApp01.webp": "/static/media/EmployeeManagerAngularSpringApp01.9157e8c23673632b29d8.webp",
     "static/media/VanillaJsShoppingApp01.webp": "/static/media/VanillaJsShoppingApp01.2ec5bb89eb63d15c5e23.webp",
     "static/media/UrlParserApp02.webp": "/static/media/UrlParserApp02.2f2862058c5d700eacbb.webp",
@@ -12,7 +15,6 @@
     "static/media/hero-bg.webp": "/static/media/hero-bg.1f2f051f2648c630b9b4.webp",
     "static/media/Project_ToDoQuiz.webp": "/static/media/Project_ToDoQuiz.03d7a17f2ca2df25f98c.webp",
     "static/media/CodingTranquillity4.webp": "/static/media/CodingTranquillity4.d2fb6e0da40fc0ee97a0.webp",
-    "static/media/UrlParserApp01.webp": "/static/media/UrlParserApp01.59a067f15d46f06b2f45.webp",
     "static/media/Project_ToDoQuiz2.webp": "/static/media/Project_ToDoQuiz2.d24586e12236117f1de7.webp",
     "static/media/Project_ToDoQuiz3.webp": "/static/media/Project_ToDoQuiz3.8487f4fa0ed1784b2e2b.webp",
     "static/media/PicDemo2.webp": "/static/media/PicDemo2.076b07675d4cfeaedcb9.webp",
@@ -44,11 +46,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c42e81283aad0e18956c7d611b867e9c.svg",
     "static/media/angular.svg": "/static/media/angular.186bad39f01ae525673e8f538e18f009.svg",
     "main.ca89e058.css.map": "/static/css/main.ca89e058.css.map",
-    "main.66e15c03.js.map": "/static/js/main.66e15c03.js.map",
+    "main.b239822f.js.map": "/static/js/main.b239822f.js.map",
     "377.2dcb55ea.chunk.js.map": "/static/js/377.2dcb55ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca89e058.css",
-    "static/js/main.66e15c03.js"
+    "static/js/main.b239822f.js"
   ]
 }
