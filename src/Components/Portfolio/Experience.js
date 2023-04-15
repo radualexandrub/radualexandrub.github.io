@@ -85,21 +85,18 @@ function Experience() {
               </div>
               <ul>
                 <li>
-                  Directly working with clients to find out their needs, while
-                  providing analogies or visual aids and estimates for each
-                  possible feature
+                  Directly worked with clients in order to find out their needs,
+                  while providing analogies or visual aids and estimates for
+                  each task or feature
                 </li>
                 <li>
-                  Create custom front-end elements with Vanilla JS, HTML, and
-                  CSS
+                  Created custom front-end elements with Vanilla JS, HTML, and
+                  CSS as well as custom back-end functionalities in PHP (eg.
+                  custom WordPress modules and features)
                 </li>
                 <li>
-                  Create custom back-end functionalities in PHP (eg. development
-                  of WordPress modules)
-                </li>
-                <li>
-                  Write clean, well-documented yet simple to understand updates
-                  on each task for colleagues to follow along
+                  Wrote clean, well-documented yet simple-to-understand updates
+                  and descriptions on each task
                 </li>
                 <li>
                   On-page SEO for WordPress sites (Meta titles/descriptions/Open
@@ -108,8 +105,11 @@ function Experience() {
                   Rich Results)
                 </li>
                 <li>
-                  Install, Configure, Migrate WordPress websites on test and
-                  live servers
+                  Installed, Configured, and Migrated WordPress websites on test
+                  and live servers (via cPanel, phpMyAdmin/MySQL)
+                </li>
+                <li>
+                  Designed and created webpages and content (eg. using Figma)
                 </li>
               </ul>
             </div>

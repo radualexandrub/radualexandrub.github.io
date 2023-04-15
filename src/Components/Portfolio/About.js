@@ -15,7 +15,7 @@ function About() {
             <h1 className="normalText">
               Software Developer based in Bucharest, Romania
             </h1>
-            . For more than a year, I developed beautiful and responsive web
+            . For more than two years, I developed beautiful and responsive web
             applications that satisfied all the needs of clients in order to
             launch or improve their current businesses.
           </div>

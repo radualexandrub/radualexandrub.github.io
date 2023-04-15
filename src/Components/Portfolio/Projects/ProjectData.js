@@ -15,11 +15,13 @@ import AndroidAge02 from "../../../img/Projects/Project_AndroidAge02.webp";
 import AndroidAge03 from "../../../img/Projects/Project_AndroidAge03.webp";
 import VanillaJSShopping02 from "../../../img/Projects/VanillaJsShoppingApp02.webp";
 import VanillaJSShopping01 from "../../../img/Projects/VanillaJsShoppingApp01.webp";
-import UrlPaserAndBuilderApp01 from "../../../img/Projects/UrlParserApp01.webp";
+import UrlPaserAndBuilderApp00 from "../../../img/Projects/UrlParserApp00.webp";
 import UrlPaserAndBuilderApp02 from "../../../img/Projects/UrlParserApp02.webp";
 import EmployeeManagerApp01 from "../../../img/Projects/EmployeeManagerAngularSpringApp01.webp";
 import EmployeeManagerApp02 from "../../../img/Projects/EmployeeManagerAngularSpringApp02_QuickEdit.webp";
 import EmployeeManagerApp03 from "../../../img/Projects/EmployeeManagerAngularSpringApp03_EmployeePage.webp";
+import TasksTimeInvestmentApp01 from "../../../img/Projects/TasksTimeInvestmentApp01.webp";
+import TasksTimeInvestmentApp02 from "../../../img/Projects/TasksTimeInvestmentApp02.webp";
 
 const ProjectData = [
   {
@@ -52,8 +54,8 @@ const ProjectData = [
     id: 2,
     title: "URL Parser and Builder App based on Query Parameters",
     category: "Web Apps",
-    img: [UrlPaserAndBuilderApp01, UrlPaserAndBuilderApp02],
-    imgAlt: "URL Parser and Builder APP",
+    img: [UrlPaserAndBuilderApp00, UrlPaserAndBuilderApp02],
+    imgAlt: "URL Parser and Builder App",
     tags: ["Angular", "TypeScript"],
     description:
       "Simple URL Parser and Builder Application based on URL's query parameters. Just enter the desired URL, modify its parameters, and use the newly built URL according to your needs! Features also include Dark mode and Accent Color picker!",
@@ -63,6 +65,20 @@ const ProjectData = [
   },
   {
     id: 3,
+    title: "Time Investment to Complete a Task Calculator",
+    category: "Web Apps",
+    img: [TasksTimeInvestmentApp01, TasksTimeInvestmentApp02],
+    imgAlt: "Time Investment to Complete a Task Calculator App",
+    tags: ["Vanilla JavaScript"],
+    description:
+      "Simple web app that helps you plan and track your progress on a task by calculating the number of hours per day you need to invest in order to complete the task in a certain amount of time. Made with Vanilla JS.",
+    github:
+      "https://github.com/radualexandrub/Study/tree/master/time-investment-to-complete-a-task-calculator",
+    livelink:
+      "https://radubulai.com/Study/time-investment-to-complete-a-task-calculator/",
+  },
+  {
+    id: 4,
     title:
       "Django Blog with Authentication, Coding-Articles, Likes and Comments",
     category: "Web Apps",
@@ -76,7 +92,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Database Management with Multiple Tables and Authentication",
     category: "Android Apps",
     img: [AndroidDB01, AndroidDB02, AndroidDB03],
@@ -89,7 +105,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
     category: "Other",
     img: [AgeClass01, AgeClass02, AgeClass03],
@@ -102,7 +118,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Age Classification Android App",
     category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
@@ -114,7 +130,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android Apps",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],
