@@ -22,15 +22,30 @@ import EmployeeManagerApp02 from "../../../img/Projects/EmployeeManagerAngularSp
 import EmployeeManagerApp03 from "../../../img/Projects/EmployeeManagerAngularSpringApp03_EmployeePage.webp";
 import TasksTimeInvestmentApp01 from "../../../img/Projects/TasksTimeInvestmentApp01.webp";
 import TasksTimeInvestmentApp02 from "../../../img/Projects/TasksTimeInvestmentApp02.webp";
+import ServerPingStatusTracker01 from "../../../img/Projects/PingStatusTrackerApp_01.webp";
+import ServerPingStatusTracker02 from "../../../img/Projects/PingStatusTrackerApp_02.webp";
 
 const ProjectData = [
   {
-    id: 0,
+    id: 1,
+    title: "Server Ping Status Tracker App made with Angular and Spring Boot",
+    category: "Web Apps",
+    img: [ServerPingStatusTracker01, ServerPingStatusTracker02],
+    imgAlt: "Angular and Spring Boot Server Ping Status Tracker",
+    tags: ["Angular", "Spring Boot", "Docker"],
+    description:
+      "Server Ping Status Tracker is a web-based application built with Angular and Spring Boot REST API (connected to a MySQL database) that allows users to monitor servers availability in a local network by performing ping tests and displaying their online/offline status. Features also include importing/exporting JSONs, searching and filtering by status, choosing themes and accents colors.",
+    github:
+      "https://github.com/radualexandrub/SpringBoot-Angular-Server-Ping-Status-Tracker",
+    livelink: "",
+  },
+  {
+    id: 2,
     title: "Employee Manager App with Angular and SpringBoot Rest API",
     category: "Web Apps",
     img: [EmployeeManagerApp01, EmployeeManagerApp02, EmployeeManagerApp03],
     imgAlt: "Angular and Spring Boot API Employee Manager App",
-    tags: ["Angular", "Java", "SpringBoot"],
+    tags: ["Angular", "Java", "Spring Boot", "Docker"],
     description:
       "Employee Manager Application that allows users to perform CRUD (Create, Read, Update, Delete) operations through a Single Page Application (SPA) made in Angular (Front-End) that consumes a SpringBoot REST API (Back-End) connected to a MySQL Database.",
     github:
@@ -38,7 +53,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 1,
+    id: 3,
     title:
       "Shopping List Application with prices (CRUD) made with Vanilla JavaScript",
     category: "Web Apps",
@@ -51,7 +66,7 @@ const ProjectData = [
     livelink: "https://radualexandrub.github.io/VanillaJS-ShoppingApp/",
   },
   {
-    id: 2,
+    id: 4,
     title: "URL Parser and Builder App based on Query Parameters",
     category: "Web Apps",
     img: [UrlPaserAndBuilderApp00, UrlPaserAndBuilderApp02],
@@ -64,12 +79,12 @@ const ProjectData = [
     livelink: "https://radubulai.com/Angular-URL-Parser-and-Builder-App/",
   },
   {
-    id: 3,
+    id: 5,
     title: "Time Investment to Complete a Task Calculator",
     category: "Web Apps",
     img: [TasksTimeInvestmentApp01, TasksTimeInvestmentApp02],
     imgAlt: "Time Investment to Complete a Task Calculator App",
-    tags: ["Vanilla JavaScript"],
+    tags: ["Vanilla JavaScript", "Bootstrap CSS"],
     description:
       "Simple web app that helps you plan and track your progress on a task by calculating the number of hours per day you need to invest in order to complete the task in a certain amount of time. Made with Vanilla JS.",
     github:
@@ -78,7 +93,7 @@ const ProjectData = [
       "https://radubulai.com/Study/time-investment-to-complete-a-task-calculator/",
   },
   {
-    id: 4,
+    id: 6,
     title:
       "Django Blog with Authentication, Coding-Articles, Likes and Comments",
     category: "Web Apps",
@@ -92,7 +107,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 5,
+    id: 7,
     title: "Database Management with Multiple Tables and Authentication",
     category: "Android Apps",
     img: [AndroidDB01, AndroidDB02, AndroidDB03],
@@ -105,7 +120,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 6,
+    id: 8,
     title: "Real-Time Age and Gender Classification on Raspberry Pi 4",
     category: "Other",
     img: [AgeClass01, AgeClass02, AgeClass03],
@@ -118,7 +133,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 7,
+    id: 9,
     title: "Age Classification Android App",
     category: "Android Apps",
     img: [AndroidAge01, AndroidAge02, AndroidAge03],
@@ -130,7 +145,7 @@ const ProjectData = [
     livelink: "",
   },
   {
-    id: 8,
+    id: 10,
     title: "ToDo-Journal-Timer-Quiz App",
     category: "Android Apps",
     img: [AndroidToDo01, AndroidToDo02, AndroidToDo03],
