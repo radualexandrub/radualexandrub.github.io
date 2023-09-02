@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ca89e058.css",
-    "main.js": "/static/js/main.b239822f.js",
+    "main.js": "/static/js/main.101acc73.js",
     "static/js/377.2dcb55ea.chunk.js": "/static/js/377.2dcb55ea.chunk.js",
     "static/media/VideoDemo.gif": "/static/media/VideoDemo.102d84c9a8ddf49fa4c7.gif",
     "static/media/TasksTimeInvestmentApp02.webp": "/static/media/TasksTimeInvestmentApp02.e21abe33d294d0896523.webp",
     "static/media/UrlParserApp00.webp": "/static/media/UrlParserApp00.0b9463f1192876f7b926.webp",
     "static/media/TasksTimeInvestmentApp01.webp": "/static/media/TasksTimeInvestmentApp01.c5570983483e55ba3b8d.webp",
+    "static/media/PingStatusTrackerApp_01.webp": "/static/media/PingStatusTrackerApp_01.3c1afc02fcd57eb53df4.webp",
     "static/media/EmployeeManagerAngularSpringApp01.webp": "/static/media/EmployeeManagerAngularSpringApp01.9157e8c23673632b29d8.webp",
     "static/media/VanillaJsShoppingApp01.webp": "/static/media/VanillaJsShoppingApp01.2ec5bb89eb63d15c5e23.webp",
+    "static/media/PingStatusTrackerApp_02.webp": "/static/media/PingStatusTrackerApp_02.abd8487f5bf8e77ed6fc.webp",
     "static/media/UrlParserApp02.webp": "/static/media/UrlParserApp02.2f2862058c5d700eacbb.webp",
     "static/media/VanillaJsShoppingApp02.webp": "/static/media/VanillaJsShoppingApp02.eac589cbd88fc5c28986.webp",
     "static/media/Project_AndroidAge02.webp": "/static/media/Project_AndroidAge02.96cd24e2fac96a179b42.webp",
@@ -46,11 +48,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c42e81283aad0e18956c7d611b867e9c.svg",
     "static/media/angular.svg": "/static/media/angular.186bad39f01ae525673e8f538e18f009.svg",
     "main.ca89e058.css.map": "/static/css/main.ca89e058.css.map",
-    "main.b239822f.js.map": "/static/js/main.b239822f.js.map",
+    "main.101acc73.js.map": "/static/js/main.101acc73.js.map",
     "377.2dcb55ea.chunk.js.map": "/static/js/377.2dcb55ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca89e058.css",
-    "static/js/main.b239822f.js"
+    "static/js/main.101acc73.js"
   ]
 }
