@@ -5,8 +5,8 @@ import {
   faLinkedin,
   faDev,
   faHackerrank,
-  faFlickr,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
@@ -59,19 +59,19 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
-            href="https://www.hackerrank.com/RaduAlexandruB"
-            title="HackerRank"
+            href="https://leetcode.com/radualexandrub/"
+            title="LeetCode"
           >
-            <FontAwesomeIcon icon={faHackerrank} />
+            <FontAwesomeIcon icon={faCode} />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
-            href="https://www.flickr.com/radualexandru"
-            title="Flickr - I'm also a photographer!"
+            href="https://www.hackerrank.com/RaduAlexandruB"
+            title="HackerRank"
           >
-            <FontAwesomeIcon icon={faFlickr} />
+            <FontAwesomeIcon icon={faHackerrank} />
           </a>
         </div>
       </div>
