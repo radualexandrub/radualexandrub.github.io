@@ -6,8 +6,9 @@ function About() {
       <section className="resume-section hero" id="about">
         <div className="resume-section-content">
           <div className="mb-0 hero--title">
-            I build amazing <span className="text-primary">experiences</span>{" "}
-            between your business and your clients
+            Building and Maintaining{" "}
+            <span className="text-primary">Lasting</span> Products. Keeping
+            Customers <span className="text-primary">Happy</span>
           </div>
           <br />
           <div className="lead mb-4 hero--description">
@@ -15,9 +16,9 @@ function About() {
             <h1 className="normalText">
               Software Developer based in Bucharest, Romania
             </h1>
-            . For more than two years, I developed beautiful and responsive web
-            applications that satisfied all the needs of clients in order to
-            launch or improve their current businesses.
+            . With over three years of experience, I specialize in developing
+            functional, easy-to-maintain web applications that help businesses
+            thrive.
           </div>
           <div className="subheading mb-4">
             <LinkScroll

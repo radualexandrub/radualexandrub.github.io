@@ -17,14 +17,14 @@ export default function Contact() {
           <a href="mailto:radualexandrubulai@gmail.com">
             radualexandrubulai@gmail.com
           </a>
-          <br />
+          {/* <br />
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://drive.google.com/file/d/1LWma3CprEUah28nkyBCMdLo0bLGTMi0K/view?usp=sharing"
           >
             View my Resume
-          </a>
+          </a> */}
         </div>
 
         <div className="social-icons">
